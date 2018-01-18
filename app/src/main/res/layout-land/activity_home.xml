@@ -1,0 +1,606 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    android:fillViewport="true"
+    android:scrollbars="none"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="stpaulsmarthom.com.stpaulsmarthom.Activities.HomeActivity"
+    android:orientation="vertical"
+    >
+    <LinearLayout
+        android:scrollbars="none"
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context="stpaulsmarthom.com.stpaulsmarthom.Activities.HomeActivity"
+        android:orientation="vertical"
+        >
+    <LinearLayout
+        android:layout_weight="1.5"
+        android:layout_margin="8dp"
+        android:layout_width="match_parent"
+        android:layout_height="0dp">
+    <ImageView
+        android:layout_weight="2"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:src="@drawable/home_page_logo"
+        />
+        <LinearLayout
+            android:layout_gravity="center_vertical"
+            android:layout_weight="7.5"
+            android:orientation="vertical"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content">
+            <View
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="16dp"
+                android:background="#c6c6e2"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                ></View>
+
+            <TextView
+                android:textSize="25sp"
+                android:textStyle="bold"
+                android:layout_gravity="center"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="St. Paul's Mar Thoma Parish"
+                android:textColor="#3073a0"/>
+
+            <TextView
+                android:textSize="20sp"
+                android:textStyle="bold"
+                android:layout_gravity="center"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Kingdom of Bahrain"
+                android:textColor="#3073a0"/>
+
+            <View
+                android:layout_marginTop="4dp"
+                android:layout_marginLeft="30dp"
+                android:layout_marginRight="30dp"
+                android:background="#c6c6e2"
+                android:layout_width="match_parent"
+                android:layout_height="4dp"
+                ></View>
+
+        </LinearLayout>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_weight="8"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="0dp">
+
+
+        <LinearLayout
+            android:layout_marginBottom="4dp"
+            android:layout_marginLeft="4dp"
+            android:orientation="vertical"
+            android:layout_weight="3.125"
+            android:layout_width="0dp"
+            android:layout_height="match_parent">
+
+            <RelativeLayout
+                android:clickable="true"
+
+                android:id="@+id/rl_about_us"
+                android:layout_margin="4dp"
+                android:background="?attr/selectableItemBackgroundBorderless"
+                android:layout_weight="3.125"
+                android:layout_width="match_parent"
+                android:layout_height="0dp">
+
+                <ImageView
+                    android:src="@drawable/rectangle_blue"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+
+                    />
+                <ImageView
+                    android:src="@drawable/about_us"
+                    android:layout_centerInParent="true"
+                    android:layout_width="80dp"
+                    android:layout_height="80dp" />
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="30dp"
+                    android:layout_alignParentBottom="true"
+                    android:layout_alignParentStart="true">
+
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:src="@drawable/rectangle_transparent_black"
+
+                        />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerInParent="true"
+                        android:text="About us"
+                        android:textAllCaps="true"
+                        android:textColor="@android:color/white"
+                        android:textSize="12sp"
+                        android:textStyle="bold" />
+                </RelativeLayout>
+
+
+            </RelativeLayout>
+            <RelativeLayout
+                android:background="?attr/selectableItemBackgroundBorderless"
+                android:clickable="true"
+
+                android:layout_margin="4dp"
+                android:id="@+id/rl_kaisthana"
+
+                android:layout_weight="3.75"
+                android:layout_width="match_parent"
+                android:layout_height="0dp">
+
+                <ImageView
+                    android:src="@drawable/rectangle_red"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    />
+
+                <ImageView
+                    android:src="@drawable/kaisthana_smithi"
+                    android:layout_centerInParent="true"
+                    android:layout_width="80dp"
+                    android:layout_height="80dp" />
+                <RelativeLayout
+
+                    android:layout_alignParentBottom="true"
+                    android:layout_width="match_parent"
+                    android:layout_height="30dp">
+
+                    <ImageView
+                        android:src="@drawable/rectangle_transparent_black"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+
+                        />
+                    <TextView
+                        android:textSize="12sp"
+                        android:textAllCaps="true"
+                        android:textStyle="bold"
+                        android:layout_centerInParent="true"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Kaisthana samithi"
+                        android:textColor="@android:color/white"
+                        />
+                </RelativeLayout>
+            </RelativeLayout>
+            <RelativeLayout
+                android:layout_margin="4dp"
+                android:id="@+id/rl_publications"
+                android:background="?attr/selectableItemBackgroundBorderless"
+                android:clickable="true"
+
+                android:layout_weight="3.125"
+            android:layout_width="match_parent"
+            android:layout_height="0dp">
+
+            <ImageView
+                android:src="@drawable/rectangle_light_blue"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+
+                />
+
+                <ImageView
+                    android:src="@drawable/publication"
+                    android:layout_centerInParent="true"
+                    android:layout_width="80dp"
+                    android:layout_height="80dp" />
+                <RelativeLayout
+
+                    android:layout_alignParentBottom="true"
+                    android:layout_width="match_parent"
+                    android:layout_height="30dp">
+
+                    <ImageView
+                        android:src="@drawable/rectangle_transparent_black"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+
+                        />
+                    <TextView
+                        android:textSize="12sp"
+                        android:textAllCaps="true"
+                        android:textStyle="bold"
+                        android:layout_centerInParent="true"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="publications"
+                        android:textColor="@android:color/white"
+                        />
+                </RelativeLayout>
+        </RelativeLayout>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_marginBottom="4dp"
+
+            android:layout_weight="3.125"
+            android:layout_width="0dp"
+            android:layout_height="match_parent">
+
+            <RelativeLayout
+                android:clickable="true"
+
+                android:id="@+id/rl_our_bishop"
+                android:layout_margin="4dp"
+                android:background="?attr/selectableItemBackgroundBorderless"
+                android:layout_weight="3.75"
+                android:layout_width="match_parent"
+                android:layout_height="0dp">
+
+                <ImageView
+                    android:src="@drawable/rectangle_green"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+
+                    />
+
+                <ImageView
+                    android:src="@drawable/our_bishop"
+                    android:layout_centerInParent="true"
+                    android:layout_width="80dp"
+                    android:layout_height="80dp" />
+                <RelativeLayout
+                    android:layout_alignParentBottom="true"
+                    android:layout_width="match_parent"
+                    android:layout_height="30dp">
+
+                    <ImageView
+                        android:src="@drawable/rectangle_transparent_black"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+
+                        />
+                    <TextView
+                        android:textSize="12sp"
+                        android:textAllCaps="true"
+                        android:textStyle="bold"
+                        android:layout_centerInParent="true"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="our bishops"
+                        android:textColor="@android:color/white"
+                        />
+                </RelativeLayout>
+            </RelativeLayout>
+            <RelativeLayout
+                android:layout_margin="4dp"
+                android:id="@+id/rl_organisation"
+                android:background="?attr/selectableItemBackgroundBorderless"
+                android:clickable="true"
+
+                android:layout_weight="3.125"
+                android:layout_width="match_parent"
+                android:layout_height="0dp">
+
+                <ImageView
+                    android:src="@drawable/rectangle_dark_yellow"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+
+                    />
+
+                <ImageView
+                    android:src="@drawable/origanisation"
+                    android:layout_centerInParent="true"
+                    android:layout_width="80dp"
+                    android:layout_height="80dp" />
+                <RelativeLayout
+
+
+                    android:layout_alignParentBottom="true"
+                    android:layout_width="match_parent"
+                    android:layout_height="30dp">
+
+                    <ImageView
+                        android:src="@drawable/rectangle_transparent_black"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+
+                        />
+                    <TextView
+                        android:textSize="12sp"
+                        android:textAllCaps="true"
+                        android:textStyle="bold"
+                        android:layout_centerInParent="true"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="organisations"
+                        android:textColor="@android:color/white"
+                        />
+                </RelativeLayout>
+            </RelativeLayout> <RelativeLayout
+            android:layout_margin="4dp"
+            android:id="@+id/rl_resources"
+            android:background="?attr/selectableItemBackgroundBorderless"
+            android:clickable="true"
+
+            android:layout_weight="3.125"
+            android:layout_width="match_parent"
+            android:layout_height="0dp">
+
+            <ImageView
+                android:src="@drawable/rectangle_blue"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+
+                />
+
+            <ImageView
+                android:src="@drawable/resource"
+                android:layout_centerInParent="true"
+                android:layout_width="80dp"
+                android:layout_height="80dp" />
+            <RelativeLayout
+
+                android:layout_alignParentBottom="true"
+                android:layout_width="match_parent"
+                android:layout_height="30dp">
+
+                <ImageView
+                    android:src="@drawable/rectangle_transparent_black"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+
+                    />
+                <TextView
+                    android:textSize="12sp"
+                    android:textAllCaps="true"
+                    android:textStyle="bold"
+                    android:layout_centerInParent="true"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Resources"
+                    android:textColor="@android:color/white"
+                    />
+            </RelativeLayout>
+        </RelativeLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_marginBottom="4dp"
+            android:layout_marginRight="4dp"
+            android:orientation="vertical"
+
+            android:layout_weight="3.125"
+            android:layout_width="0dp"
+            android:layout_height="match_parent">
+            <RelativeLayout
+                android:id="@+id/rl_our_vicar"
+                android:background="?attr/selectableItemBackgroundBorderless"
+                android:clickable="true"
+                android:layout_margin="4dp"
+                android:layout_weight="3.125"
+                android:layout_width="match_parent"
+                android:layout_height="0dp">
+
+                <ImageView
+                    android:src="@drawable/rectangle_dark_yellow"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+
+                    />
+
+                <ImageView
+                    android:src="@drawable/our_vicar"
+                    android:layout_centerInParent="true"
+                    android:layout_width="80dp"
+                    android:layout_height="80dp" />
+                <RelativeLayout
+                    android:layout_alignParentBottom="true"
+                    android:layout_width="match_parent"
+                    android:layout_height="30dp">
+
+                    <ImageView
+                        android:src="@drawable/rectangle_transparent_black"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+
+                        />
+                    <TextView
+                        android:textSize="12sp"
+                        android:textAllCaps="true"
+                        android:textStyle="bold"
+                        android:layout_centerInParent="true"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="our vicar"
+                        android:textColor="@android:color/white"
+                        />
+                </RelativeLayout>
+            </RelativeLayout>
+            <RelativeLayout
+                android:layout_margin="4dp"
+                android:id="@+id/rl_edirectory"
+                android:background="?attr/selectableItemBackgroundBorderless"
+                android:clickable="true"
+
+                android:layout_weight="3.125"
+                android:layout_width="match_parent"
+                android:layout_height="0dp">
+
+                <ImageView
+                    android:src="@drawable/rectangle_light_blue"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+
+                    />
+                <ImageView
+                    android:src="@drawable/e_directory"
+                    android:layout_centerInParent="true"
+                    android:layout_width="80dp"
+                    android:layout_height="80dp" />
+                <RelativeLayout
+
+                    android:layout_alignParentBottom="true"
+                    android:layout_width="match_parent"
+                    android:layout_height="30dp">
+
+                    <ImageView
+                        android:src="@drawable/rectangle_transparent_black"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+
+                        />
+                    <TextView
+                        android:textSize="12sp"
+                        android:textAllCaps="true"
+                        android:textStyle="bold"
+                        android:layout_centerInParent="true"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="e-directory"
+                        android:textColor="@android:color/white"
+                        />
+                </RelativeLayout>
+            </RelativeLayout>
+            <RelativeLayout
+                android:layout_margin="4dp"
+                android:id="@+id/rl_contact_us"
+                android:background="?attr/selectableItemBackgroundBorderless"
+                android:clickable="true"
+
+                android:layout_weight="3.75"
+            android:layout_width="match_parent"
+            android:layout_height="0dp">
+
+            <ImageView
+                android:src="@drawable/rectangle_red"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+
+                />
+
+                <ImageView
+                    android:src="@drawable/contact"
+                    android:layout_centerInParent="true"
+                    android:layout_width="80dp"
+                    android:layout_height="80dp" />
+                <RelativeLayout
+
+                    android:layout_alignParentBottom="true"
+                    android:layout_width="match_parent"
+                    android:layout_height="30dp">
+
+                    <ImageView
+                        android:src="@drawable/rectangle_transparent_black"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+
+                        />
+                    <TextView
+                        android:textSize="12sp"
+                        android:textAllCaps="true"
+                        android:textStyle="bold"
+                        android:layout_centerInParent="true"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="contact us"
+                        android:textColor="@android:color/white"
+                        />
+                </RelativeLayout>
+        </RelativeLayout>
+
+        </LinearLayout>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_marginTop="8dp"
+        android:layout_marginLeft="4dp"
+        android:layout_marginRight="4dp"
+        android:orientation="horizontal"
+        android:layout_marginBottom="4dp"
+        android:layout_weight="0.8"
+        android:layout_width="match_parent"
+        android:layout_height="0dp">
+        <RelativeLayout
+            android:id="@+id/rl_about"
+            android:layout_margin="4dp"
+            android:background="?attr/selectableItemBackgroundBorderless"
+            android:clickable="true"
+
+            android:layout_weight="3.33"
+            android:layout_width="0dp"
+            android:layout_height="match_parent">
+
+            <ImageView
+                android:src="@drawable/rectangle_dark_yellow"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+
+                />
+            <ImageView
+                android:src="@drawable/home2"
+                android:layout_centerInParent="true"
+                android:layout_width="30dp"
+                android:layout_height="30dp" />
+        </RelativeLayout>
+        <RelativeLayout
+            android:id="@+id/rl_dir"
+            android:background="?attr/selectableItemBackgroundBorderless"
+            android:clickable="true"
+
+            android:layout_margin="4dp"
+            android:layout_weight="3.33"
+            android:layout_width="0dp"
+            android:layout_height="match_parent">
+
+            <ImageView
+                android:src="@drawable/rectangle_light_blue"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+
+                />
+            <ImageView
+                android:src="@drawable/ic_bible"
+                android:layout_centerInParent="true"
+                android:layout_width="18dp"
+                android:layout_height="18dp" />
+        </RelativeLayout>
+        <RelativeLayout
+            android:id="@+id/rl_privacy"
+            android:background="?attr/selectableItemBackgroundBorderless"
+            android:clickable="true"
+            android:layout_margin="4dp"
+            android:layout_weight="3.33"
+            android:layout_width="0dp"
+            android:layout_height="match_parent">
+
+            <ImageView
+                android:src="@drawable/rectangle_red"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+
+                />
+            <ImageView
+                android:src="@drawable/ic_privacy"
+                android:layout_centerInParent="true"
+                android:layout_width="17dp"
+                android:layout_height="17dp" />
+        </RelativeLayout>
+
+    </LinearLayout>
+
+    </LinearLayout>
+</ScrollView>

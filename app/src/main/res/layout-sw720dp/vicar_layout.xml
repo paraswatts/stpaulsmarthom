@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:background="#fff"
+    xmlns:custom="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    tools:ignore=",WebViewLayout">
+
+    <RelativeLayout
+        android:layout_margin="8dp"
+        android:background="#fff"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <ProgressBar
+            android:layout_marginTop="60dp"
+            android:layout_centerInParent="true"
+            android:id="@+id/vicar_image_bar"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:progressDrawable="@drawable/vicar_progress"/>
+
+        <ImageView
+            android:src="@drawable/sample"
+            android:padding="8dp"
+        android:background="@drawable/image_bg"
+        android:id="@+id/iv_our_vicar"
+        android:layout_width="match_parent"
+        android:layout_height="500dp" />
+
+
+    </RelativeLayout>
+
+    <TextView xmlns:tools="http://schemas.android.com/tools"
+        android:layout_marginTop="8dp"
+        android:textColor="#000"
+        android:layout_gravity="center_horizontal"
+        tools:text="Vicar Title"
+        android:textSize="35sp"
+        android:id="@+id/tv_vicar_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+    <!--<stpaulsmarthom.com.stpaulsmarthom.Activities.JustifiedTextView-->
+        <!--android:layout_gravity="center_horizontal"-->
+        <!--android:gravity="center_horizontal"-->
+        <!--android:layout_marginTop="8dp"-->
+        <!--android:paddingBottom="8dp"-->
+        <!--android:textColor="#000"-->
+        <!--android:id="@+id/tv_our_vicar"-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="wrap_content"/>-->
+    <!--<me.biubiubiu.justifytext.library.JustifyTextView-->
+        <!--android:layout_gravity="center_horizontal"-->
+        <!--android:gravity="center_horizontal"-->
+        <!--android:layout_marginTop="8dp"-->
+        <!--android:layout_marginRight="-10dp"-->
+        <!--android:paddingBottom="8dp"-->
+        <!--android:textColor="#000"-->
+        <!--android:id="@+id/tv_our_vicar"-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="wrap_content"/>-->
+    <LinearLayout
+        android:layout_margin="8dp"
+
+        android:layout_below="@id/iv_about_us"
+        android:id="@+id/ll2"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TextView
+            android:layout_gravity="center"
+            android:textColor="#000"
+            android:text="Zoom Text"
+            android:textSize="30dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <SeekBar
+            android:layout_marginLeft="8dp"
+            android:scaleX="1"
+            android:scaleY="1"
+            android:layout_gravity="center"
+            android:id="@+id/seek_bar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:max="12"
+            />
+    </LinearLayout>
+    <WebView
+        android:id="@+id/tv_our_vicar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+    </WebView>
+
+</LinearLayout>

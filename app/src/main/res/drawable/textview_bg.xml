@@ -1,0 +1,18 @@
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android" >
+android:shape="rectangle" android:padding="10dp">
+    <!--<solid android:color="#eaeaea"/>-->
+    <!--<stroke android:width="1dp" android:color="#a09e9d"-->
+        <!--/>-->
+
+    <item android:bottom="-1dp"
+        android:left="-4dp"
+        android:right="-4dp"
+        android:top="-3dp">
+        <shape android:shape="rectangle" >
+            <solid android:color="#eaeaea"/>
+            <stroke
+                android:width="2dp"
+                android:color="#a09e9d" />
+        </shape>
+    </item>
+</layer-list>

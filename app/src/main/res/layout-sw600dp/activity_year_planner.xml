@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="stpaulsmarthom.com.stpaulsmarthom.Activities.PublicationsActivity">
+
+    <RelativeLayout
+        android:id="@+id/header"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp"
+        android:layout_marginTop="8dp"
+        android:background="#646464"
+        android:layout_width="match_parent"
+        android:layout_height="50dp">
+        <TextView
+            android:textSize="25sp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#FFF"
+            android:text="PUBLICATIONS -> YEAR PLANNER"
+            android:layout_centerInParent="true"    />
+    </RelativeLayout>
+    <RelativeLayout
+        android:layout_below="@+id/header"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+    <com.jsibbold.zoomage.ZoomageView
+        android:src="@drawable/sample"
+        android:layout_centerInParent="true"
+        android:id="@+id/iv_year_planner"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp"
+        app:zoomage_restrictBounds="false"
+        app:zoomage_animateOnReset="true"
+        app:zoomage_autoResetMode="UNDER"
+        app:zoomage_autoCenter="true"
+        app:zoomage_zoomable="true"
+        app:zoomage_translatable="true"
+        app:zoomage_minScale="0.6"
+        app:zoomage_maxScale="8"
+        />
+        <ProgressBar
+            android:visibility="gone"
+            android:layout_centerInParent="true"
+            android:id="@+id/progress_year"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            />
+    </RelativeLayout>
+    <!--<ImageView-->
+        <!--android:layout_marginLeft="8dp"-->
+        <!--android:layout_marginRight="8dp"-->
+        <!--android:layout_below="@+id/header"-->
+        <!--android:id="@+id/iv_year_planner"-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="wrap_content" />-->
+    <ProgressBar
+        android:layout_centerInParent="true"
+        android:id="@+id/google_progress_year"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        />
+</RelativeLayout>

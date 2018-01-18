@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:id="@+id/rl_kais"
+    android:background="#fff"
+    tools:context="stpaulsmarthom.com.stpaulsmarthom.Activities.KaisthanaSamithiActivity">
+
+    <RelativeLayout
+        android:id="@+id/rl_header"
+        android:visibility="gone"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp"
+        android:layout_marginTop="8dp"
+        android:background="#646464"
+        android:layout_width="match_parent"
+        android:layout_height="30dp">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#FFF"
+            android:text="OFFICE BEARERS"
+            android:layout_centerInParent="true"    />
+    </RelativeLayout>
+       <android.support.v7.widget.RecyclerView
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp"
+        android:layout_marginBottom="8dp"
+        android:id="@+id/recyclerView_Kaisthana"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+
+    <ProgressBar
+        android:layout_centerInParent="true"
+        android:id="@+id/google_progress_kais"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        />
+</RelativeLayout>

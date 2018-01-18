@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_gravity="center"
+    android:orientation="horizontal" >
+
+
+    <TextView
+        android:layout_gravity="center"
+        android:textStyle="bold"
+        android:gravity="center"
+        android:layout_weight="9"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="my Title"
+        android:textColor="#FFF"
+        android:id="@+id/myActionBarTitle"
+        android:textSize="23sp" />
+
+    <ImageView
+        android:visibility="gone"
+        android:layout_gravity="center"
+        android:layout_weight="1"
+        android:id="@+id/home"
+        android:src="@drawable/home2"
+        android:layout_marginRight="16dp"
+        android:layout_width="0dp"
+        android:layout_height="30dp" />
+
+</LinearLayout>

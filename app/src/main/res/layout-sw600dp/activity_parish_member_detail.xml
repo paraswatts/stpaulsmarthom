@@ -1,0 +1,1185 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    android:scrollbars="none"
+    android:fillViewport="true"
+    android:layout_height="match_parent"
+    android:layout_width="match_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+<LinearLayout
+    android:layout_marginBottom="8dp"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="stpaulsmarthom.com.stpaulsmarthom.Activities.ParishMemberDetailActivity">
+
+    <LinearLayout
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="100dp">
+
+    <ImageView
+        android:layout_marginTop="8dp"
+        android:layout_weight="2"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:src="@drawable/app_logo"
+
+        />
+<LinearLayout
+    android:layout_gravity="center_vertical"
+    android:layout_weight="5"
+    android:orientation="vertical"
+    android:layout_width="0dp"
+    android:layout_height="wrap_content">
+    <TextView
+        android:textAllCaps="true"
+        android:layout_marginTop="8dp"
+        android:layout_weight="0.6"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="St. Paul's Mar Thoma Parish"
+        android:textColor="@color/textColor"
+        android:layout_gravity="center_horizontal"
+        android:textSize="14dp"
+        android:textStyle="bold"
+        />
+
+    <TextView
+        android:layout_marginTop="8dp"
+        android:layout_weight="0.6"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Kingdom of Bahrain"
+        android:textColor="#FF0000"
+        android:layout_gravity="center_horizontal"
+
+        android:textStyle="bold"
+        android:fontFamily="@font/miranda"
+        />
+
+    <TextView
+        android:layout_marginTop="8dp"
+        android:layout_weight="0.6"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="MEMBER DIRECTORY"
+        android:textColor="#8e7156"
+        android:layout_gravity="center_horizontal"
+        android:textSize="15dp"
+        android:textStyle="bold"
+        />
+
+
+</LinearLayout>
+        <ImageView
+            android:id="@+id/iv_parish_member_detail"
+            android:layout_marginTop="8dp"
+            android:layout_weight="2"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:src="@drawable/sample"
+
+            />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_marginTop="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TextView
+            android:padding="4dp"
+            android:background="@drawable/textview_bg"
+            android:textColor="#eb4142"
+            android:text="NAME OF THE MEMBER"
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="match_parent" />
+        <TextView
+            android:textColor="@color/textColor"
+
+            android:id="@+id/parish_member_name"
+            android:padding="4dp"
+            android:background="@drawable/textview_bg"
+            tools:text="ABY VARGHESE"
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="match_parent" />
+    </LinearLayout>
+    <LinearLayout
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TextView
+            android:padding="4dp"
+            android:background="@drawable/textview_bg"
+            android:textColor="#eb4142"
+            android:text="ROLL NO"
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="match_parent" />
+        <TextView
+            android:id="@+id/parish_roll_no"
+            android:padding="4dp"
+            android:background="@drawable/textview_bg"
+            android:textColor="@color/textColor"
+            tools:text="430"
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="match_parent" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TextView
+            android:padding="4dp"
+            android:background="@drawable/textview_bg"
+            android:textColor="#eb4142"
+            android:text="AREA"
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="match_parent" />
+        <TextView
+            android:id="@+id/parish_area"
+            android:padding="4dp"
+            android:background="@drawable/textview_bg"
+            android:textColor="@color/textColor"
+            tools:text="LULU ROAD"
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="match_parent" />
+    </LinearLayout>
+    <LinearLayout
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TextView
+            android:padding="4dp"
+            android:background="@drawable/textview_bg"
+            android:textColor="#eb4142"
+            android:text="YEARS IN BAHRAIN"
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="match_parent" />
+        <TextView
+            android:id="@+id/parish_years_bah"
+            android:padding="4dp"
+            android:background="@drawable/textview_bg"
+            android:textColor="@color/textColor"
+            tools:text="1"
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="match_parent" />
+    </LinearLayout>
+    <LinearLayout
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TextView
+            android:padding="4dp"
+            android:background="@drawable/textview_bg"
+            android:textColor="#eb4142"
+            android:text="BLOOD GROUP"
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="match_parent" />
+        <TextView
+            android:id="@+id/parish_member_blood"
+            android:padding="4dp"
+            android:background="@drawable/textview_bg"
+            android:textColor="@color/textColor"
+            tools:text="B+"
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="match_parent" />
+    </LinearLayout>
+    <LinearLayout
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TextView
+            android:padding="4dp"
+            android:background="@drawable/textview_bg"
+            android:textColor="#eb4142"
+            android:text="MARITAL STATUS"
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="match_parent" />
+        <TextView
+            android:id="@+id/parish_marital_status"
+            android:padding="4dp"
+            android:background="@drawable/textview_bg"
+            android:textColor="@color/textColor"
+            tools:text="MARRIED"
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="match_parent" />
+    </LinearLayout>
+    <LinearLayout
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TextView
+            android:padding="4dp"
+            android:background="@drawable/textview_bg"
+            android:textColor="#eb4142"
+            android:text="DATE OF MARRIAGE"
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="match_parent" />
+        <TextView
+            android:id="@+id/parish_dom"
+            android:padding="4dp"
+            android:background="@drawable/textview_bg"
+            android:textColor="@color/textColor"
+            tools:text="15-AUGUST"
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="match_parent" />
+    </LinearLayout>
+    <LinearLayout
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TextView
+            android:padding="4dp"
+            android:background="@drawable/textview_bg"
+            android:textColor="#eb4142"
+            android:text="DATE OF BIRTH"
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="match_parent" />
+        <TextView
+            android:id="@+id/parish_dob"
+            android:padding="4dp"
+            android:background="@drawable/textview_bg"
+            android:textColor="@color/textColor"
+            tools:text="10-NOVEMBER"
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="match_parent" />
+    </LinearLayout>
+    <LinearLayout
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TextView
+            android:padding="4dp"
+            android:background="@drawable/textview_bg"
+            android:textColor="#eb4142"
+            android:text="EMAIL"
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="match_parent" />
+        <TextView
+            android:id="@+id/parish_email"
+            android:padding="4dp"
+            android:background="@drawable/textview_bg"
+            android:textColor="@color/textColor"
+            tools:text="ABYJINUJ@GMAIL.COM"
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="match_parent" />
+    </LinearLayout>
+    <LinearLayout
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TextView
+            android:padding="4dp"
+            android:background="@drawable/textview_bg"
+            android:textColor="#eb4142"
+            android:text="COMPANY NAME"
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="match_parent" />
+        <TextView
+            android:id="@+id/parish_company"
+            android:padding="4dp"
+            android:background="@drawable/textview_bg"
+            android:textColor="@color/textColor"
+            tools:text="GULF MENWAH CONSTRUCTION"
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="match_parent" />
+    </LinearLayout>
+    <TextView
+        android:layout_marginTop="4dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp"
+        android:padding="4dp"
+        android:background="@drawable/textview_bg"
+        android:textColor="#eb4142"
+        android:text="MAILING ADDRESS"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+    <LinearLayout
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <TextView
+            android:padding="4dp"
+            android:background="@drawable/textview_bg"
+            android:textColor="#eb4142"
+            android:text="TELEPHONE OFFICE"
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="match_parent" />
+        <TextView
+            android:id="@+id/parish_tel_off"
+            android:padding="4dp"
+            android:background="@drawable/textview_bg"
+            android:textColor="#0000ee"
+            tools:text=""
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+    <LinearLayout
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TextView
+            android:padding="4dp"
+            android:background="@drawable/textview_bg"
+            android:textColor="#eb4142"
+            android:text="TELEPHONE RESIDENTIAL"
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="match_parent" />
+        <TextView
+            android:id="@+id/parish_tel_res"
+            android:padding="4dp"
+            android:background="@drawable/textview_bg"
+            android:textColor="#0000ee"
+            tools:text="+97333829940"
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="match_parent" />
+    </LinearLayout>
+    <LinearLayout
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TextView
+            android:padding="4dp"
+            android:background="@drawable/textview_bg"
+            android:textColor="#eb4142"
+            android:text="TELEPHONE MOBILE"
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="match_parent" />
+        <TextView
+            android:id="@+id/parish_tel_mobile"
+            android:padding="4dp"
+            android:background="@drawable/textview_bg"
+            android:textColor="#0000ee"
+            tools:text="+97335921551"
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="match_parent" />
+    </LinearLayout>
+    <LinearLayout
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TextView
+            android:padding="4dp"
+            android:background="@drawable/textview_bg"
+            android:textColor="#eb4142"
+            android:text="FAX"
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="match_parent" />
+        <TextView
+            android:id="@+id/parish_fax"
+            android:padding="4dp"
+            android:background="@drawable/textview_bg"
+            android:textColor="@color/textColor"
+            tools:text=""
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="match_parent" />
+    </LinearLayout>
+    <LinearLayout
+        android:layout_marginTop="4dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TextView
+            android:padding="4dp"
+            android:background="@drawable/textview_bg"
+            android:textColor="#eb4142"
+            android:text="HOME PARISH"
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="match_parent" />
+        <TextView
+            android:id="@+id/parish_home"
+            android:padding="4dp"
+            android:background="@drawable/textview_bg"
+            android:textColor="@color/textColor"
+            tools:text="NIRANAM-ST THOMAS MARTHOMA CHURCH"
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="match_parent" />
+    </LinearLayout>
+
+
+    <TextView
+        android:textAlignment="center"
+        android:layout_marginTop="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp"
+        android:padding="4dp"
+        android:background="@drawable/textview_bg_heading"
+        android:textColor="#FFF"
+        android:text="ADDRESS IN BAHRAIN"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <LinearLayout
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TextView
+            android:padding="4dp"
+            android:background="@drawable/textview_bg"
+            android:textColor="#eb4142"
+            android:text="FLAT NO"
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="match_parent" />
+        <TextView
+            android:id="@+id/parish_flat"
+            android:padding="4dp"
+            android:background="@drawable/textview_bg"
+            android:textColor="@color/textColor"
+            tools:text="21"
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="match_parent" />
+    </LinearLayout>
+    <LinearLayout
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TextView
+            android:padding="4dp"
+            android:background="@drawable/textview_bg"
+            android:textColor="#eb4142"
+            android:text="BLDG NO"
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="match_parent" />
+        <TextView
+            android:id="@+id/parish_bldg"
+            android:padding="4dp"
+            android:background="@drawable/textview_bg"
+            android:textColor="@color/textColor"
+            tools:text="1816"
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="match_parent" />
+    </LinearLayout><LinearLayout
+    android:layout_marginLeft="8dp"
+    android:layout_marginRight="8dp"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+    <TextView
+        android:padding="4dp"
+        android:background="@drawable/textview_bg"
+        android:textColor="#eb4142"
+        android:text="AREA"
+        android:layout_weight="1"
+        android:layout_width="0dp"
+        android:layout_height="match_parent" />
+    <TextView
+        android:id="@+id/parish_area_bah"
+        android:padding="4dp"
+        android:background="@drawable/textview_bg"
+        android:textColor="@color/textColor"
+        tools:text="MANAMA, LULU ROAD"
+        android:layout_weight="1"
+        android:layout_width="0dp"
+        android:layout_height="match_parent" />
+</LinearLayout>
+    <LinearLayout
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TextView
+            android:padding="4dp"
+            android:background="@drawable/textview_bg"
+            android:textColor="#eb4142"
+            android:text="ROAD"
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="match_parent" />
+        <TextView
+            android:id="@+id/parish_road"
+            android:padding="4dp"
+            android:background="@drawable/textview_bg"
+            android:textColor="@color/textColor"
+            tools:text="233"
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="match_parent" />
+    </LinearLayout>
+    <LinearLayout
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TextView
+
+            android:padding="4dp"
+            android:background="@drawable/textview_bg"
+            android:textColor="#eb4142"
+            android:text="BLOCK"
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="match_parent" />
+        <TextView
+            android:id="@+id/parish_block"
+            android:padding="4dp"
+            android:background="@drawable/textview_bg"
+            android:textColor="@color/textColor"
+            tools:text="302"
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="match_parent" />
+    </LinearLayout>
+    <LinearLayout
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TextView
+            android:padding="4dp"
+            android:background="@drawable/textview_bg"
+            android:textColor="#eb4142"
+            android:text="EMERGENCY CONTACT"
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="match_parent" />
+        <TextView
+            android:id="@+id/parish_emer_contact"
+            android:padding="4dp"
+            android:background="@drawable/textview_bg"
+            android:textColor="@color/textColor"
+            tools:text="V.M. MATHAI"
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="match_parent" />
+    </LinearLayout><LinearLayout
+    android:layout_marginLeft="8dp"
+    android:layout_marginRight="8dp"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+    <TextView
+        android:padding="4dp"
+        android:background="@drawable/textview_bg"
+        android:textColor="#eb4142"
+        android:text="TELEPHONE OFFICE"
+        android:layout_weight="1"
+        android:layout_width="0dp"
+        android:layout_height="match_parent" />
+    <TextView
+        android:id="@+id/parish_tel_off_bah"
+        android:padding="4dp"
+        android:background="@drawable/textview_bg"
+        android:textColor="#0000ee"
+        tools:text="+97333261520"
+        android:layout_weight="1"
+        android:layout_width="0dp"
+        android:layout_height="match_parent" />
+</LinearLayout>
+    <LinearLayout
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TextView
+            android:padding="4dp"
+            android:background="@drawable/textview_bg"
+            android:textColor="#eb4142"
+            android:text="TELEPHONE RESIDENTIAL"
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="match_parent" />
+        <TextView
+            android:id="@+id/parish_tel_res_bah"
+            android:padding="4dp"
+            android:background="@drawable/textview_bg"
+            android:textColor="#0000ee"
+            tools:text="+97339803122"
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="match_parent" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TextView
+            android:padding="4dp"
+            android:background="@drawable/textview_bg"
+            android:textColor="#eb4142"
+            android:text="TELEPHONE MOBILE"
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="match_parent" />
+        <TextView
+            android:id="@+id/parish_tel_mob_bah"
+            android:padding="4dp"
+            android:background="@drawable/textview_bg"
+            android:textColor="#0000ee"
+            tools:text="+97339803122"
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="match_parent" />
+    </LinearLayout>
+
+    <TextView
+        tools:textAlignment="center"
+        android:layout_marginTop="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp"
+        android:padding="4dp"
+        android:background="@drawable/textview_bg_heading"
+        android:textColor="#FFF"
+        android:text="ADDRESS IN INDIA"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <LinearLayout
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TextView
+            android:padding="4dp"
+            android:background="@drawable/textview_bg"
+            android:textColor="#eb4142"
+            android:text="HOUSE NAME"
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="match_parent" />
+        <TextView
+            android:id="@+id/parish_house_ind"
+            android:padding="4dp"
+            android:background="@drawable/textview_bg"
+            android:textColor="@color/textColor"
+            tools:text="ORETH PULIMOOTIL"
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="match_parent" />
+    </LinearLayout>
+    <LinearLayout
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TextView
+            android:padding="4dp"
+            android:background="@drawable/textview_bg"
+            android:textColor="#eb4142"
+            android:text="POST OFFICE"
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="match_parent" />
+        <TextView
+            android:id="@+id/parish_po"
+            android:padding="4dp"
+            android:background="@drawable/textview_bg"
+            android:textColor="@color/textColor"
+            tools:text="VALANGAVATTOM PO"
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="match_parent" />
+    </LinearLayout>
+    <LinearLayout
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TextView
+            android:padding="4dp"
+            android:background="@drawable/textview_bg"
+            android:textColor="#eb4142"
+            android:text="TOWN"
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="match_parent" />
+        <TextView
+            android:id="@+id/parish_town"
+            android:padding="4dp"
+            android:background="@drawable/textview_bg"
+            android:textColor="@color/textColor"
+            tools:text="THIRUVALLA"
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="match_parent" />
+    </LinearLayout><LinearLayout
+    android:layout_marginLeft="8dp"
+    android:layout_marginRight="8dp"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+    <TextView
+        android:padding="4dp"
+        android:background="@drawable/textview_bg"
+        android:textColor="#eb4142"
+        android:text="DISTRICT"
+        android:layout_weight="1"
+        android:layout_width="0dp"
+        android:layout_height="match_parent" />
+    <TextView
+        android:id="@+id/parish_district"
+        android:padding="4dp"
+        android:background="@drawable/textview_bg"
+        android:textColor="@color/textColor"
+        tools:text="PATHANAMTHITTA"
+        android:layout_weight="1"
+        android:layout_width="0dp"
+        android:layout_height="match_parent" />
+</LinearLayout>
+    <LinearLayout
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TextView
+            android:padding="4dp"
+            android:background="@drawable/textview_bg"
+            android:textColor="#eb4142"
+            android:text="PIN"
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="match_parent" />
+        <TextView
+            android:id="@+id/parish_pin"
+            android:padding="4dp"
+            android:background="@drawable/textview_bg"
+            android:textColor="@color/textColor"
+            tools:text="689104"
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="match_parent" />
+    </LinearLayout>
+    <LinearLayout
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TextView
+            android:padding="4dp"
+            android:background="@drawable/textview_bg"
+            android:textColor="#eb4142"
+            android:text="STATE"
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="match_parent" />
+        <TextView
+            android:id="@+id/parish_state"
+            android:padding="4dp"
+            android:background="@drawable/textview_bg"
+            android:textColor="@color/textColor"
+            tools:text="KERALA"
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="match_parent" />
+    </LinearLayout>
+    <LinearLayout
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TextView
+            android:padding="4dp"
+            android:background="@drawable/textview_bg"
+            android:textColor="#eb4142"
+            android:text="TELEPHONE WITH CODE"
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="match_parent" />
+        <TextView
+            android:id="@+id/parish_tel_code"
+            android:padding="4dp"
+            android:background="@drawable/textview_bg"
+            android:textColor="#0000ee"
+            tools:text="+914692747458"
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="match_parent" />
+    </LinearLayout>
+    <LinearLayout
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TextView
+            android:padding="4dp"
+            android:background="@drawable/textview_bg"
+            android:textColor="#eb4142"
+            android:text="MOBILE WITH CODE"
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="match_parent" />
+        <TextView
+            android:id="@+id/parish_mobile"
+            android:padding="4dp"
+            android:background="@drawable/textview_bg"
+            android:textColor="#0000ee"
+            tools:text="+919744048080"
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="match_parent" />
+    </LinearLayout>
+    <LinearLayout
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TextView
+            android:padding="4dp"
+            android:background="@drawable/textview_bg"
+            android:textColor="#eb4142"
+            android:text="EMERGENCY CONTACT"
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="match_parent" />
+        <TextView
+            android:id="@+id/parish_emer_contact_india"
+            android:padding="4dp"
+            android:background="@drawable/textview_bg"
+            android:textColor="@color/textColor"
+            tools:text="V.M. MATHAI"
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="match_parent" />
+    </LinearLayout>
+    <LinearLayout
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TextView
+            android:padding="4dp"
+            android:background="@drawable/textview_bg"
+            android:textColor="#eb4142"
+            android:text="TELEPHONE OFFICE"
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="match_parent" />
+        <TextView
+            android:id="@+id/parish_emer_tel_office"
+            android:padding="4dp"
+            android:background="@drawable/textview_bg"
+            android:textColor="#0000ee"
+            android:text=""
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="match_parent" />
+    </LinearLayout>
+    <LinearLayout
+
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TextView
+            android:padding="4dp"
+            android:background="@drawable/textview_bg"
+            android:textColor="#eb4142"
+            android:text="TELEPHONE RESIDENTIAL"
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="match_parent" />
+        <TextView
+            android:id="@+id/parish_emer_tel_res"
+            android:padding="4dp"
+            android:background="@drawable/textview_bg"
+            android:textColor="#0000ee"
+            tools:text=""
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="match_parent" />
+    </LinearLayout>
+    <LinearLayout
+        android:id="@+id/parish_emer_tel_mob_ind"
+
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TextView
+            android:padding="4dp"
+            android:background="@drawable/textview_bg"
+            android:textColor="#eb4142"
+            android:text="TELEPHONE MOBILE"
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="match_parent" />
+        <TextView
+            android:id="@+id/parish_emer_mobile"
+            android:padding="4dp"
+            android:background="@drawable/textview_bg"
+            android:textColor="#0000ee"
+            tools:text=""
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="match_parent" />
+    </LinearLayout>
+    <TextView
+        android:textAlignment="center"
+        android:layout_marginTop="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp"
+        android:padding="4dp"
+        android:background="@drawable/textview_bg_heading"
+        android:textColor="#FFF"
+        android:text="FAMILY DETAILS"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+    <LinearLayout
+        android:orientation="vertical"
+        android:background="@drawable/textview_bg"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <ImageView
+            android:id="@+id/parish_member_wife"
+            android:layout_marginTop="1dp"
+            android:layout_marginBottom="1dp"
+            android:layout_gravity="center_horizontal"
+            android:layout_width="150dp"
+            android:layout_height="200dp"
+            android:src="@drawable/sample"
+
+            />
+    </LinearLayout>
+    <LinearLayout
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TextView
+            android:padding="4dp"
+            android:background="@drawable/textview_bg"
+            android:textColor="#eb4142"
+            android:text="WIFE NAME"
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="match_parent" />
+        <TextView
+            android:id="@+id/parish_wife_name"
+            android:padding="4dp"
+            android:background="@drawable/textview_bg"
+            android:textColor="@color/textColor"
+            tools:text="JINU ABY"
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="match_parent" />
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TextView
+            android:padding="4dp"
+            android:background="@drawable/textview_bg"
+            android:textColor="#eb4142"
+            android:text="DATE OF BIRTH"
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="match_parent" />
+        <TextView
+            android:id="@+id/parish_dob_wife"
+            android:padding="4dp"
+            android:background="@drawable/textview_bg"
+            android:textColor="@color/textColor"
+            tools:text="03-AUGUST"
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="match_parent" />
+    </LinearLayout>
+    <LinearLayout
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TextView
+            android:padding="4dp"
+            android:background="@drawable/textview_bg"
+            android:textColor="#eb4142"
+            android:text="EMPLOYER NAME"
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="match_parent" />
+        <TextView
+            android:id="@+id/parish_emplr_name"
+            android:padding="4dp"
+            android:background="@drawable/textview_bg"
+            android:textColor="@color/textColor"
+            tools:text="BAHRAIN DEFENCE FORCE HOSPITAL"
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="match_parent" />
+    </LinearLayout>
+    <LinearLayout
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TextView
+            android:padding="4dp"
+            android:background="@drawable/textview_bg"
+            android:textColor="#eb4142"
+            android:text="NATIVE PLACE"
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="match_parent" />
+        <TextView
+            android:id="@+id/parish_native"
+            android:padding="4dp"
+            android:background="@drawable/textview_bg"
+            android:textColor="@color/textColor"
+            tools:text="MALLAPALLY"
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="match_parent" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TextView
+            android:padding="4dp"
+            android:background="@drawable/textview_bg"
+            android:textColor="#eb4142"
+            android:text="BLOOD GROUP"
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="match_parent" />
+        <TextView
+            android:id="@+id/parish_blood_wife"
+            android:padding="4dp"
+            android:background="@drawable/textview_bg"
+            android:textColor="@color/textColor"
+            tools:text="B+"
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="match_parent" />
+    </LinearLayout>
+    <LinearLayout
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TextView
+            android:padding="4dp"
+            android:background="@drawable/textview_bg"
+            android:textColor="#eb4142"
+            android:text="IN BAHRAIN"
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="match_parent" />
+        <TextView
+            android:id="@+id/parish_wife_in_bah"
+            android:padding="4dp"
+            android:background="@drawable/textview_bg"
+            android:textColor="@color/textColor"
+            tools:text="yes"
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="match_parent" />
+    </LinearLayout>
+    <LinearLayout
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TextView
+            android:padding="4dp"
+            android:background="@drawable/textview_bg"
+            android:textColor="#eb4142"
+            android:text="EMPLOYEE"
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="match_parent" />
+        <TextView
+            android:id="@+id/parish_wife_employee"
+            android:padding="4dp"
+            android:background="@drawable/textview_bg"
+            android:textColor="@color/textColor"
+            tools:text="yes"
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="match_parent" />
+    </LinearLayout>
+    <TextView
+        android:visibility="gone"
+        android:id="@+id/child_header"
+        android:textAlignment="center"
+        android:layout_marginTop="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp"
+        android:padding="4dp"
+        android:background="@drawable/textview_bg_heading"
+        android:textColor="#FFF"
+        android:text="CHILDREN DETAILS"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        xmlns:android="http://schemas.android.com/apk/res/android" />
+    <android.support.v7.widget.RecyclerView
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp"
+        android:layout_marginBottom="8dp"
+        android:id="@+id/recyclerView_MemberChild"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+    <!--<ListView-->
+        <!--android:visibility="gone"-->
+        <!--android:scrollbars="none"-->
+        <!--android:layout_marginLeft="8dp"-->
+        <!--android:layout_marginRight="8dp"-->
+        <!--android:layout_marginBottom="8dp"-->
+        <!--android:id="@+id/listView_MemberChild"-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="match_parent" />-->
+
+</LinearLayout>
+</ScrollView>

@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <LinearLayout
+        android:paddingTop="8dp"
+        android:paddingBottom="8dp"
+        android:id="@+id/ll_parish"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+    <ImageView
+        android:src="@drawable/sample"
+        android:layout_marginLeft="8dp"
+        android:layout_gravity="center_vertical"
+        android:layout_marginRight="8dp"
+        android:layout_weight="2.5"
+        android:id="@+id/iv_parish"
+        android:layout_width="0dp"
+        android:layout_height="120dp" />
+
+        <LinearLayout
+            android:layout_gravity="center_vertical"
+            android:orientation="vertical"
+            android:layout_weight="7"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <ImageView
+                    android:src="@drawable/user"
+                    android:layout_marginRight="8dp"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp" />
+
+                <TextView
+                    android:layout_gravity="center_vertical"
+                    android:textColor="@color/textColor"
+                    android:gravity="center_vertical"
+                    android:text="Aby varghese"
+                    android:id="@+id/tv_parish_name"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <ImageView
+                    android:src="@drawable/message"
+                    android:layout_marginRight="8dp"
+
+                    android:layout_width="30dp"
+                    android:layout_height="30dp" />
+
+                <TextView
+                    android:layout_gravity="center_vertical"
+                    android:textColor="@color/textColor"
+
+                    android:gravity="center_vertical"
+                    android:text="abyjinuj@gmail.com"
+                    android:id="@+id/tv_parish_email"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:gravity="center"
+                    android:text="R"
+                    android:layout_gravity="center"
+                    android:layout_marginRight="8dp"
+                    android:textColor="#606060"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp" />
+
+                <TextView
+                    android:layout_gravity="center_vertical"
+                    android:textColor="@color/textColor"
+                    android:gravity="center_vertical"
+                    android:text="22"
+                    android:id="@+id/tv_parish_age"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <ImageView
+                    android:src="@drawable/phone2"
+                    android:layout_marginRight="8dp"
+
+                    android:layout_width="30dp"
+                    android:layout_height="30dp" />
+
+                <TextView
+                    android:layout_gravity="center_vertical"
+                    android:textColor="@color/textColor"
+
+                    android:gravity="center_vertical"
+                    android:text="22"
+                    android:id="@+id/tv_parish_phone"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+
+            </LinearLayout>
+
+
+
+
+        </LinearLayout>
+
+
+        <ImageView
+            android:layout_gravity="center_vertical"
+            android:background="?attr/selectableItemBackgroundBorderless"
+            android:clickable="true"
+            android:id="@+id/iv_parish_next"
+            android:layout_weight="1"
+            android:src="@drawable/right_button"
+            android:layout_width="0dp"
+            android:layout_height="120dp" />
+
+    </LinearLayout>
+
+</LinearLayout>

@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#ececec"
+    tools:context="stpaulsmarthom.com.stpaulsmarthom.Activities.PublicationsActivity">
+
+    <RelativeLayout
+        android:id="@+id/head2"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp"
+        android:layout_marginTop="8dp"
+        android:background="#646464"
+        android:layout_width="match_parent"
+        android:layout_height="30dp">
+        <TextView
+            android:textSize="20sp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#FFF"
+            android:text="PUBLICATIONS -> PARISH BULLETIN"
+            android:layout_centerInParent="true"    />
+    </RelativeLayout>
+    <GridView
+        android:layout_below="@+id/head2"
+        android:layout_marginTop="2dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp"
+        android:scrollbars="none"
+        android:id="@+id/gridView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:numColumns="2"
+        android:verticalSpacing="2dp"
+        android:horizontalSpacing="2dp"
+        >
+
+    </GridView>
+
+    <ProgressBar
+        android:layout_centerInParent="true"
+        android:id="@+id/google_progress_pdf"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        />
+</RelativeLayout>

@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    android:background="#fff"
+    android:scrollbars="none"
+    android:fillViewport="true"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#fff"
+    android:padding="8dp"
+    tools:context="stpaulsmarthom.com.stpaulsmarthom.Activities.AboutActivity">
+
+    <ImageView
+        android:src="@drawable/sample"
+        android:background="@drawable/image_bg"
+        android:padding="8dp"
+        android:layout_centerHorizontal="true"
+        android:id="@+id/iv_about_us"
+        android:layout_width="450dp"
+        android:layout_height="540dp" />
+    <LinearLayout
+        android:layout_margin="8dp"
+
+        android:layout_below="@id/iv_about_us"
+        android:id="@+id/ll2"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TextView
+            android:layout_gravity="center"
+            android:textColor="#000"
+            android:text="Zoom Text"
+            android:textSize="30dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <SeekBar
+            android:layout_marginLeft="8dp"
+            android:scaleX="1"
+            android:scaleY="1"
+            android:layout_gravity="center"
+            android:id="@+id/seek_bar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:max="12"
+            />
+    </LinearLayout>
+
+    <WebView
+        android:layout_below="@id/ll2"
+        android:id="@+id/tv_about_us"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+        <ProgressBar
+android:layout_centerInParent="true"
+            android:id="@+id/google_progress"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            />
+    </RelativeLayout>
+</ScrollView>

@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="#fff"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+
+    <LinearLayout
+        android:background="#fff"
+        android:paddingTop="8dp"
+        android:paddingBottom="8dp"
+        android:id="@+id/ll_bishop_detail"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+    <ImageView
+        android:src="@drawable/sample"
+        android:layout_gravity="center_vertical"
+        android:layout_marginRight="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_weight="2"
+        android:id="@+id/iv_bishop"
+        android:layout_width="0dp"
+        android:layout_height="100dp" />
+
+        <TextView
+            android:textColor="@color/textColor"
+            android:layout_gravity="center_vertical"
+            android:gravity="center_vertical"
+            android:layout_weight="7"
+            android:text="His Grace The Most Rev. Dr. Philipose Mar Chrysostom Mar Thoma Valiya Metropolitan"
+            android:id="@+id/tv_bishop"
+            android:textSize="18sp"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content" />
+
+        <ImageView
+            android:layout_gravity="center_vertical"
+            android:layout_weight="1"
+            android:src="@drawable/right_button"
+            android:layout_width="0dp"
+            android:layout_height="50dp" />
+
+
+    </LinearLayout>
+</LinearLayout>

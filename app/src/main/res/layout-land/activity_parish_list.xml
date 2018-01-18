@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#fff"
+    tools:context="stpaulsmarthom.com.stpaulsmarthom.Activities.EDirectoryActivity">
+<LinearLayout
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <RelativeLayout
+
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp"
+        android:layout_marginTop="8dp"
+        android:layout_weight="1"
+        android:layout_width="match_parent"
+        android:layout_height="40dp">
+ <EditText
+     android:textSize="25sp"
+     android:enabled="false"
+        android:id="@+id/search_content"
+     android:paddingLeft="8dp"
+     android:background="@drawable/edittext_bg"
+     android:hint="Search With Content"
+     android:layout_width="match_parent"
+     android:layout_height="match_parent"
+     />
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp"
+        android:layout_marginTop="8dp"
+
+        android:orientation="horizontal"
+        android:layout_weight="1"
+        android:layout_width="match_parent"
+        android:layout_height="40dp">
+        <RelativeLayout
+
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="match_parent">
+        <EditText
+            android:enabled="false"
+            android:textSize="25sp"
+            android:id="@+id/search_name"
+            android:paddingLeft="8dp"
+            android:background="@drawable/edittext_bg"
+            android:hint="Search By Name"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            />
+
+        </RelativeLayout>
+        <RelativeLayout
+            android:layout_marginLeft="8dp"
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="match_parent">
+        <EditText
+            android:enabled="false"
+            android:textSize="25sp"
+            android:id="@+id/search_roll"
+        android:paddingLeft="8dp"
+        android:background="@drawable/edittext_bg"
+        android:hint="Search by Roll no"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        />
+
+    </RelativeLayout>
+    </LinearLayout>
+    <View
+        android:background="#d8d8d8"
+        android:layout_height="1dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp"
+        android:layout_marginTop="8dp"
+        android:layout_width="match_parent"
+        >
+    </View>
+    <!--<ListView-->
+        <!--android:visibility="gone"-->
+        <!--android:layout_marginLeft="8dp"-->
+        <!--android:layout_marginRight="8dp"-->
+        <!--android:layout_marginTop="16dp"-->
+        <!--android:layout_weight="8"-->
+        <!--android:layout_marginBottom="8dp"-->
+        <!--android:id="@+id/listView_Parish"-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="0dp" />-->
+    <android.support.v7.widget.RecyclerView
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp"
+        android:layout_weight="8"
+        android:layout_marginBottom="8dp"
+        android:id="@+id/recyclerView_Parish"
+        android:layout_width="match_parent"
+        android:layout_height="0dp" />iew>
+</LinearLayout>
+
+    <ProgressBar
+        android:progressDrawable="@drawable/parish_progress"
+        android:layout_centerInParent="true"
+        android:id="@+id/google_progress_parish"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        />
+
+</RelativeLayout>

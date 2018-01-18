@@ -1,0 +1,231 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="8dp"
+    android:fillViewport="true"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+
+        android:background="#fff"
+        android:orientation="vertical">
+
+        <ImageView
+            android:background="@drawable/image_bg"
+            android:padding="8dp"
+            android:id="@+id/iv_parish_child"
+            android:layout_width="200dp"
+            android:layout_height="250dp"
+            android:layout_gravity="center_horizontal"
+            android:layout_margin="8dp"
+            android:layout_marginBottom="1dp"
+            android:layout_marginTop="1dp"
+            android:src="@drawable/sample"
+
+            />
+    </LinearLayout>
+
+    <LinearLayout
+        android:background="@drawable/textview_bg_alt"
+
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <TextView
+            android:textSize="25sp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="4dp"
+            android:text="NAME OF CHILDREN"
+            android:textColor="#828282" />
+
+        <TextView
+            android:textSize="25sp"
+            android:id="@+id/parish_child_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="4dp"
+            android:textColor="#000"
+            tools:text="" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:background="#fff"
+
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <TextView
+            android:textSize="25sp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="4dp"
+            android:text="DATE OF BIRTH"
+            android:textColor="#828282" />
+
+        <TextView
+            android:textSize="25sp"
+            android:id="@+id/parish_dob_child"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="4dp"
+            android:textColor="#000"
+            tools:text="" />
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:background="@drawable/textview_bg_alt"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <TextView
+            android:textSize="25sp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="4dp"
+            android:text="BLOOD GROUP"
+            android:textColor="#828282" />
+
+        <TextView
+            android:textSize="25sp"
+            android:id="@+id/parish_blood_child"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="4dp"
+            android:textColor="#000"
+            tools:text="" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:background="#fff"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <TextView
+            android:textSize="25sp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="4dp"
+            android:text="IN BAHRAIN"
+            android:textColor="#828282" />
+
+        <TextView
+            android:textSize="25sp"
+            android:id="@+id/parish_in_bah_child"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="4dp"
+            android:textColor="#000"
+            tools:text="" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:background="@drawable/textview_bg_alt"
+
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <TextView
+            android:textSize="25sp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="4dp"
+            android:text="STUDENT EMPLOYEE"
+            android:textColor="#828282" />
+
+        <TextView
+            android:textSize="25sp"
+            android:id="@+id/parish_employee_child"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="4dp"
+            android:textColor="#000"
+            tools:text="" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:background="#fff"
+
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <TextView
+            android:textSize="25sp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="4dp"
+            android:text="SEX"
+            android:textColor="#828282" />
+
+        <TextView
+            android:textSize="25sp"
+            android:id="@+id/parish_sex_child"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="4dp"
+            android:textColor="#000"
+            tools:text="" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:background="@drawable/textview_bg_alt"
+
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <TextView
+            android:textSize="25sp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="4dp"
+            android:text="INSTITUTION"
+            android:textColor="#828282" />
+
+        <TextView
+            android:textSize="25sp"
+            android:id="@+id/parish_inst_child"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="4dp"
+            android:textColor="#000"
+            tools:text="" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:background="#fff"
+
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <TextView
+            android:textSize="25sp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="4dp"
+            android:text="EMPLOYER NAME"
+            android:textColor="#828282" />
+
+        <TextView
+            android:textSize="25sp"
+            android:id="@+id/parish_emplr_name_child"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="4dp"
+            android:textColor="#000"
+            tools:text="" />
+    </LinearLayout>
+</LinearLayout>

@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#fff"
+
+    >
+<LinearLayout
+    android:layout_margin="8dp"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="stpaulsmarthom.com.stpaulsmarthom.Activities.ResourcesActivity">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:gravity="center"
+        android:textSize="30sp"
+        android:textColor="#FFF"
+        android:background="#29b1a3"
+        android:text="BIBLE"
+        />
+
+    <Button
+
+        android:id="@+id/bt_bible_english"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:gravity="center"
+        android:textSize="25sp"
+ 
+        android:textColor="#000"
+        android:background="#FFF"
+        android:text="ENGLISH"
+        />
+
+    <Button
+        android:id="@+id/bt_bible_malayalam"
+        android:layout_marginTop="2dp"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:gravity="center"
+        android:textSize="25sp"
+        android:textColor="#000"
+        android:background="#FFF"
+        android:text="MALAYALAM"
+        />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:gravity="center"
+        android:textSize="30sp"
+
+        android:textColor="#FFF"
+        android:background="#29b1a3"
+        android:text="WORSHIP"
+        />
+
+    <Button
+        android:id="@+id/bt_parasya"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:gravity="center"
+        android:textSize="25sp"
+
+        android:textColor="#000"
+        android:background="#FFF"
+
+        android:text="PARASYARAADHANA KRAMAM"
+        />
+
+    <TextView
+
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:gravity="center"
+        android:textSize="30sp"
+        android:textColor="#FFF"
+        android:background="#29b1a3"
+        android:text="KRISTHEEYA KEERTHANANGAL"
+
+
+        />
+
+    <Button
+        android:id="@+id/bt_kristeeya_alpha"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:gravity="center"
+        android:textSize="25sp"
+        android:textAllCaps="false"
+        android:textColor="#000"
+        android:background="#FFF"
+        android:text="KRISTHEEYA KEERTHANANGAL (Alphabetical Order)"
+        />
+
+    <Button
+        android:id="@+id/bt_kristeeya_number"
+        android:layout_marginTop="2dp"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:gravity="center"
+        android:textSize="25sp"
+        android:textColor="#000"
+        android:background="#FFF"
+        android:textAllCaps="false"
+        android:text="KRISTHEEYA KEERTHANANGAL (Number Order)"
+        />
+
+
+
+</LinearLayout>
+
+    <ProgressBar
+        android:layout_centerInParent="true"
+        android:id="@+id/google_progress_res"
+        android:layout_width="70dp"
+        android:layout_height="70dp"
+        />
+</RelativeLayout>

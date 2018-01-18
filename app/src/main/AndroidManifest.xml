@@ -1,0 +1,280 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="stpaulsmarthom.com.stpaulsmarthom">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/>
+
+    <uses-permission  android:name="android.permission.DOWNLOAD_WITHOUT_NOTIFICATION" />
+    <application
+        android:resizeableActivity="true"
+        android:name=".Global"
+        android:allowBackup="true"
+        android:icon="@mipmap/app_logo"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/app_logo"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+
+        <meta-data android:name="android.max_aspect" android:value="2.1" />
+        <meta-data
+            android:name="com.google.android.gms.version"
+            android:value="@integer/google_play_services_version" />
+        <meta-data
+            android:name="com.google.android.geo.API_KEY"
+            android:value="@string/google_maps_key" />
+
+        <activity
+            android:launchMode="singleTop"
+            android:name=".Activities.HomeActivity" />
+        <activity
+            android:launchMode="singleTop"
+            android:name=".Activities.AboutActivity">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".Activities.HomeActivity" />
+        </activity>
+        <activity
+            android:launchMode="singleTop"
+            android:name=".Activities.OurVicarActivity">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".Activities.HomeActivity" />
+        </activity>
+        <!--<activity android:name=".OfflineActivities.OurVicarOfflineActivity">-->
+            <!--<meta-data-->
+                <!--android:name="android.support.PARENT_ACTIVITY"-->
+                <!--android:value=".Activities.HomeActivity" />-->
+        <!--</activity>-->
+        <activity
+            android:launchMode="singleTop"
+            android:name=".Activities.OurBishopsActivity">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".Activities.HomeActivity" />
+        </activity>
+        <!--<activity android:name=".OfflineActivities.OurBishopsOfflineActivity">-->
+            <!--<meta-data-->
+                <!--android:name="android.support.PARENT_ACTIVITY"-->
+                <!--android:value=".Activities.HomeActivity" />-->
+        <!--</activity>-->
+        <activity
+            android:launchMode="singleTop"
+            android:name=".Activities.KaisthanaSamithiActivity">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".Activities.HomeActivity" />
+        </activity>
+        <!--<activity android:name=".OfflineActivities.KaisthanaOfflineActivity">-->
+            <!--<meta-data-->
+                <!--android:name="android.support.PARENT_ACTIVITY"-->
+                <!--android:value=".Activities.HomeActivity" />-->
+        <!--</activity>-->
+        <activity
+            android:launchMode="singleTop"
+            android:name=".Activities.BishopDetailActivity">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".Activities.OurBishopsActivity" />
+        </activity>
+        <activity
+            android:name=".SplashScreen"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.AppCompat.Light.NoActionBar.FullScreen">
+            >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:launchMode="singleTop"
+            android:name=".Activities.ContactUsActivity">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".Activities.HomeActivity" />
+        </activity>
+        <activity
+            android:launchMode="singleTop"
+            android:name=".Activities.ResourcesActivity">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".Activities.HomeActivity" />
+        </activity>
+        <activity
+            android:launchMode="singleTop"
+            android:name=".Activities.PublicationsActivity">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".Activities.HomeActivity" />
+        </activity>
+        <activity
+            android:launchMode="singleTop"
+            android:name=".Activities.ParishDetailActivity">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".Activities.ParishDetailActivity" />
+        </activity>
+        <activity
+            android:launchMode="singleTop"
+            android:name=".Activities.OrganisationsActivity">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".Activities.HomeActivity" />
+        </activity>
+        <activity
+            android:launchMode="singleTop"
+            android:name=".Activities.OrganisationDetailActivity">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".Activities.OrganisationsActivity" />
+        </activity>
+        <!--<activity android:name=".OfflineActivities.OrgOfflineActivity">-->
+            <!--<meta-data-->
+                <!--android:name="android.support.PARENT_ACTIVITY"-->
+                <!--android:value=".Activities.OrganisationsActivity" />-->
+        <!--</activity>-->
+
+        <provider
+            android:name=".Database.DbProvider"
+            android:authorities="stpaulsmarthom.com.stpaulsmarthom"
+            android:exported="false" />
+
+        <activity
+            android:launchMode="singleTop"
+            android:name=".Activities.PrayerRequestActivity">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".Activities.PrayerRequestActivity" />
+        </activity>
+        <activity
+            android:launchMode="singleTop"
+            android:name=".Activities.PdfViewerActivity">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".Activities.ParishDetailActivity" />
+        </activity>
+        <activity
+            android:launchMode="singleTop"
+            android:name=".Activities.PdfViewerActivityStatic">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".Activities.ParishDetailActivity" />
+        </activity>
+        <activity
+            android:launchMode="singleTop"
+            android:name=".Activities.EDirectoryActivity">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".Activities.HomeActivity" />
+        </activity>
+        <activity
+            android:launchMode="singleTop"
+            android:name=".Activities.ParishMemberActivity"
+            android:windowSoftInputMode="adjustPan">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".Activities.EDirectoryActivity" />
+        </activity>
+        <!--<activity-->
+            <!--android:name=".OfflineActivities.ParishMemberOfflineActivity"-->
+            <!--android:windowSoftInputMode="adjustPan">-->
+            <!--<meta-data-->
+                <!--android:name="android.support.PARENT_ACTIVITY"-->
+                <!--android:value=".Activities.EDirectoryActivity" />-->
+        <!--</activity>-->
+        <activity
+            android:launchMode="singleTop"
+            android:name=".Activities.ParishMemberDetailActivity">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".Activities.ParishMemberDetailActivity" />
+        </activity>
+        <activity
+            android:launchMode="singleTop"
+            android:name=".Activities.YearPlannerActivity">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".Activities.PublicationsActivity" />
+        </activity>
+        <!--<activity android:name=".OfflineActivities.ParishOfflineActivity">-->
+            <!--<meta-data-->
+                <!--android:name="android.support.PARENT_ACTIVITY"-->
+                <!--android:value=".Activities.PublicationsActivity" />-->
+        <!--</activity>-->
+        <activity
+            android:launchMode="singleTop"
+            android:name=".Activities.PrivacyPolicyActivity">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".Activities.HomeActivity" />
+        </activity>
+        <activity
+            android:launchMode="singleTop"
+            android:name=".Activities.ParishMemberDetailList">
+        <meta-data
+            android:name="android.support.PARENT_ACTIVITY"
+            android:value=".Activities.ParishMemberActivity" />
+    </activity>
+
+        <activity
+            android:launchMode="singleTop"
+            android:name=".Activities.PersonalDetailActivity">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".Activities.ParishMemberDetailList" />
+        </activity>
+
+        <activity
+            android:launchMode="singleTop"
+            android:name=".Activities.AddressBahrainActivity">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".Activities.ParishMemberDetailList" />
+        </activity>
+        <activity
+            android:launchMode="singleTop"
+            android:name=".Activities.AddressIndiaActivity">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".Activities.ParishMemberDetailList" />
+        </activity>
+
+        <activity
+            android:launchMode="singleTop"
+            android:name=".Activities.FamilyDetailsActivity">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".Activities.ParishMemberDetailList" />
+        </activity>
+
+        <activity
+            android:launchMode="singleTop"
+            android:name=".Activities.ChildDetailsActivity">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".Activities.ParishMemberDetailList" />
+        </activity>
+        <receiver android:name=".NetworkConnectivityChange">
+            <intent-filter>
+                <action android:name="android.net.conn.CONNECTIVITY_CHANGE" />
+            </intent-filter>
+        </receiver>
+
+        <service
+            android:name=".services.DownloadService">
+        </service>
+
+        <service
+            android:name=".services.FetchDataService">
+        </service>
+        <service
+            android:name=".services.FetchParishDataService">
+        </service>
+
+    </application>
+
+</manifest>

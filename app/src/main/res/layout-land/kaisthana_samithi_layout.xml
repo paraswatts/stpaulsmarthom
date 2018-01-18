@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <LinearLayout
+        android:id="@+id/ll_kaisthana"
+        android:padding="8dp"
+        android:orientation="horizontal"
+        android:background="#ececec"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <ImageView
+            android:src="@drawable/sample"
+            android:id="@+id/iv_kais"
+            android:layout_weight="3"
+            android:layout_width="0dp"
+            android:layout_height="120dp" />
+        <LinearLayout
+            android:layout_weight="7"
+            android:orientation="vertical"
+            android:layout_width="0dp"
+            android:layout_height="match_parent">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <ImageView
+                android:src="@drawable/person"
+                android:layout_marginRight="8dp"
+
+                android:layout_width="30dp"
+                android:layout_height="30dp" />
+
+            <TextView
+                android:textSize="15sp"
+                android:textColor="@color/textColor"
+                android:layout_gravity="center_vertical"
+                android:gravity="center_vertical"
+                android:text="Dr. Philipose Mar Chrysostom"
+                android:id="@+id/tv_kais_name"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+        </LinearLayout>
+
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <ImageView
+                android:src="@drawable/phone2"
+                android:layout_marginRight="8dp"
+
+                android:layout_width="30dp"
+                android:layout_height="30dp" />
+
+            <TextView
+                android:textColor="@color/textColor"
+                android:textSize="15sp"
+                android:layout_gravity="center_vertical"
+                android:gravity="center_vertical"
+                android:text="Dr. Philipose Mar Chrysostom"
+                android:id="@+id/tv_kais_phone"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <ImageView
+                android:src="@drawable/star"
+                android:layout_marginRight="8dp"
+
+                android:layout_width="30dp"
+                android:layout_height="30dp" />
+
+            <TextView
+                android:textSize="15sp"
+                android:textColor="@color/textColor"
+                android:layout_gravity="center_vertical"
+                android:gravity="center_vertical"
+                android:text="Dr. Philipose Mar Chrysostom"
+                android:id="@+id/tv_kais_des"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+        </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:gravity="center"
+                    android:text="R"
+                    android:textSize="15sp"
+                    android:layout_gravity="center"
+                    android:layout_marginRight="8dp"
+                    android:textColor="#606060"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp" />
+
+                <TextView
+                    android:textSize="15sp"
+                    android:textColor="@color/textColor"
+                    android:layout_gravity="center_vertical"
+                    android:gravity="center_vertical"
+                    android:text="Dr. Philipose Mar Chrysostom"
+                    android:id="@+id/tv_kais_roll"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+
+            </LinearLayout>
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+</LinearLayout>

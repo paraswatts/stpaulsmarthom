@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#fff"
+    tools:context="stpaulsmarthom.com.stpaulsmarthom.Activities.BishopDetailActivity">
+
+    <LinearLayout
+        android:id="@+id/ll_bishop_detail"
+        android:layout_margin="8dp"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <LinearLayout
+            android:background="#FFF"
+
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+<com.mikhaellopez.circularimageview.CircularImageView
+    android:src="@drawable/sample"
+    android:layout_margin="16dp"
+    android:layout_gravity="center_horizontal"
+    android:id="@+id/iv_bishop_detail"
+    android:layout_width="290dp"
+    android:layout_height="290dp"
+    />
+
+            <TextView
+                android:textColor="@color/textColor"
+                android:layout_marginLeft="32dp"
+                android:layout_marginRight="32dp"
+                android:layout_marginBottom="16dp"
+                android:gravity="center_horizontal"
+                android:textSize="25sp"
+                android:id="@+id/tv_bishop_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"/>
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_marginTop="8dp"
+            android:layout_weight="3"
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="0dp">
+        <LinearLayout
+            android:background="#ececec"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+<ImageView
+    android:layout_width="80dp"
+    android:layout_height="80dp"
+    android:src="@drawable/location"/>
+    <TextView
+        android:textColor="@color/textColor"
+        android:textSize="22sp"
+        android:text="location"
+        android:layout_gravity="center_vertical"
+        android:id="@+id/tv_bishop_location"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+</LinearLayout>
+            <LinearLayout
+                android:background="#FFF"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <ImageView
+                    android:layout_width="80dp"
+                    android:layout_height="80dp"
+                    android:src="@drawable/phone"/>
+                <TextView
+                    android:textColor="@color/textColor"
+                    android:textSize="22sp"
+
+                    android:text="phone"
+                    android:layout_gravity="center_vertical"
+                    android:id="@+id/tv_bishop_phone"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+            </LinearLayout>
+    <LinearLayout
+        android:background="#ececec"
+
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <ImageView
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:src="@drawable/email"/>
+        <TextView
+            android:textColor="@color/textColor"
+
+            android:text="email"
+            android:textSize="22sp"
+
+            android:layout_gravity="center_vertical"
+            android:id="@+id/tv_bishop_email"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+    </LinearLayout>
+            <LinearLayout
+                android:background="#FFF"
+
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <ImageView
+                    android:layout_width="80dp"
+                    android:layout_height="80dp"
+                    android:src="@drawable/dob"/>
+                <TextView
+                    android:textColor="@color/textColor"
+                    android:textSize="22sp"
+
+                    android:text="dob"
+
+                    android:layout_gravity="center_vertical"
+                    android:id="@+id/tv_bishop_dob"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+            </LinearLayout>
+        </LinearLayout>
+</LinearLayout>
+</LinearLayout>

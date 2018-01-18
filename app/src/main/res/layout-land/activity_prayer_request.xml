@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    android:scrollbars="none"
+    android:fillViewport="true"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="stpaulsmarthom.com.stpaulsmarthom.Activities.PrayerRequestActivity">
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="stpaulsmarthom.com.stpaulsmarthom.Activities.PrayerRequestActivity">
+<LinearLayout
+    android:padding="8dp"
+    android:orientation="vertical"
+    android:background="#ececec"
+    android:layout_margin="8dp"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <EditText
+        android:textSize="20sp"
+        android:maxLines="1"
+        android:imeOptions="actionNext"
+        android:paddingRight="16dp"
+        android:id="@+id/et_prayer_name"
+        android:layout_weight="1"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:hint="Your Name (required)"
+        android:background="@drawable/edittext_bg"
+        android:paddingLeft="8dp"
+        />
+
+    <EditText
+        android:textSize="20sp"
+        android:maxLines="1"
+        android:imeOptions="actionNext"
+        android:paddingRight="16dp"
+        android:inputType="textEmailAddress"
+        android:id="@+id/et_prayer_email"
+        android:layout_marginTop="8dp"
+        android:layout_weight="1"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:hint="Your Email (required)"
+        android:background="@drawable/edittext_bg"
+        android:paddingLeft="8dp"
+        />
+
+    <EditText
+        android:textSize="20sp"
+        android:maxLines="1"
+        android:imeOptions="actionNext"
+        android:paddingRight="16dp"
+        android:inputType="phone"
+        android:id="@+id/et_prayer_phone"
+        android:layout_marginTop="8dp"
+        android:layout_weight="1"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:hint="Phone Number"
+        android:background="@drawable/edittext_bg"
+        android:paddingLeft="8dp"
+        />
+
+    <EditText
+        android:textSize="20sp"
+        android:maxLines="1"
+        android:imeOptions="actionNext"
+        android:paddingRight="16dp"
+        android:inputType="number"
+        android:id="@+id/et_prayer_roll"
+        android:layout_marginTop="8dp"
+        android:layout_weight="1"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:hint="Roll Number"
+        android:background="@drawable/edittext_bg"
+        android:paddingLeft="8dp"
+        />
+
+
+    <EditText
+        android:textSize="20sp"
+        android:maxLines="1"
+        android:imeOptions="actionNext"
+        android:paddingRight="16dp"
+        android:id="@+id/et_prayer_sub"
+        android:layout_marginTop="8dp"
+        android:layout_weight="1"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:hint="Prayer Subject"
+        android:background="@drawable/edittext_bg"
+        android:paddingLeft="8dp"
+        />
+
+    <EditText
+        android:textSize="20sp"
+        android:imeOptions="actionDone"
+        android:paddingRight="16dp"
+        android:id="@+id/et_prayer_message"
+        android:layout_marginTop="8dp"
+        android:layout_weight="3"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:hint="Prayer Message"
+        android:background="@drawable/edittext_bg"
+        android:paddingLeft="8dp"
+        />
+
+    <Button
+        android:id="@+id/bt_prayer_submit"
+        android:layout_marginTop="32dp"
+        android:background="@drawable/button_bg"
+        android:textColor="#FFF"
+        android:text="SUBMIT"
+        android:textSize="20sp"
+        android:layout_weight="1"
+        android:layout_width="250dp"
+        android:layout_height="40dp" />
+
+</LinearLayout>
+</LinearLayout>
+</ScrollView>
