@@ -21,6 +21,7 @@ import android.support.v7.widget.LinearLayoutManager;
 import android.support.v7.widget.RecyclerView;
 import android.util.Log;
 import android.view.View;
+import android.widget.Button;
 import android.widget.ImageView;
 import android.widget.ListView;
 import android.widget.ProgressBar;
@@ -74,7 +75,7 @@ public class OrganisationDetailActivity extends AppCompatActivity {
     RelativeLayout rl_head, rl_header;
 
     TextView header_timing;
-
+    Button bt_prayer_request_org;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -114,7 +115,6 @@ public class OrganisationDetailActivity extends AppCompatActivity {
         mProgressBar = findViewById(R.id.google_progress_org);
         mProgressBar.setIndeterminateDrawable(new ChromeFloatingCirclesDrawable.Builder(this)
                 .build());
-        rl_head = findViewById(R.id.rl_head);
         rl_header = findViewById(R.id.rl_header_timing);
 
         header_timing = findViewById(R.id.header_timing);
@@ -123,6 +123,7 @@ public class OrganisationDetailActivity extends AppCompatActivity {
         recyclerViewTiming = findViewById(R.id.recyclerView_orgTiming);
         recyclerView.setNestedScrollingEnabled(false);
         recyclerViewTiming.setNestedScrollingEnabled(false);
+        bt_prayer_request_org = findViewById(R.id.bt_prayer_request_org);
 
         if (isConnected(this)) {
 
@@ -140,6 +141,20 @@ public class OrganisationDetailActivity extends AppCompatActivity {
             Log.e("org number",getIntent().getStringExtra("orgNumber"));
             getData(getIntent().getStringExtra("orgNumber"));
 
+            if(getIntent().getStringExtra("orgNumber").equals("6"))
+            {
+                bt_prayer_request_org.setVisibility(View.VISIBLE);
+                bt_prayer_request_org.setOnClickListener(new View.OnClickListener() {
+                    @Override
+                    public void onClick(View v) {
+                        //http://stpaulsmarthomabahrain.com/WebServices/Sunday_School_Prayer.php
+                        Intent intent = new Intent(OrganisationDetailActivity.this,PrayerRequestActivity.class);
+                        intent.putExtra("api","1");
+                        startActivity(intent);
+                    }
+                });
+
+            }
             if (getIntent().getStringExtra("orgNumber").equals("2")) {
 
                 Log.e("Timing number", "1");
@@ -190,6 +205,34 @@ public class OrganisationDetailActivity extends AppCompatActivity {
 
                 recyclerViewTiming.setAdapter(mAdapter);
                 org_timing = "4";
+                getTiming(org_timing);
+
+            } else {
+
+                rl_header.setVisibility(View.GONE);
+
+            }
+            if (getIntent().getStringExtra("orgNumber").equals("1")) {
+                Log.e("Timing number", "5");
+                //  mAdapter = new OrgDetailAdapter(timeList,this);
+                mAdapter = new OrgDetailAdapter(timeList, this);
+
+                recyclerViewTiming.setAdapter(mAdapter);
+                org_timing = "5";
+                getTiming(org_timing);
+
+            } else {
+
+                rl_header.setVisibility(View.GONE);
+
+            }
+            if (getIntent().getStringExtra("orgNumber").equals("4")) {
+                Log.e("Timing number", "6");
+                //  mAdapter = new OrgDetailAdapter(timeList,this);
+                mAdapter = new OrgDetailAdapter(timeList, this);
+
+                recyclerViewTiming.setAdapter(mAdapter);
+                org_timing = "6";
                 getTiming(org_timing);
 
             } else {
@@ -301,7 +344,59 @@ public class OrganisationDetailActivity extends AppCompatActivity {
 //                        timeList.add(orgTimingModel);
                     }
 
-                 else {
+                else if (getIntent().getStringExtra("orgNumber").equals("1")) {
+                    Log.e("Timing number", "5");
+                    //  mAdapter = new OrgDetailAdapter(timeList,this);
+                    mAdapter = new OrgDetailAdapter(timeList, this);
+
+                    recyclerViewTiming.setAdapter(mAdapter);
+                    org_timing = "5";
+                    getTime(org_timing);
+//                    List<OrgTimingModel> timings = dbHelper.getOrgTiming(org_timing);
+//                    //listView_MemberChild.setAdapter(childCursorAdapter);
+//                    for (OrgTimingModel cn : timings) {
+//
+//                        orgTimingModel = new OrgTimingModel(cn.getName(),
+//                                cn.getPhone(),
+//                                cn.getTiming_number(),
+//                                cn.getMember_type()
+//
+//                        );
+//                        // Log.e("Image member",cn.getMemberimagepath());
+//                        //                    orgDetailModel.setName(cn.getName());
+////                    orgDetailModel.setDesignation(cn.getDesignation());
+////                    orgDetailModel.setPhone(cn.getPhone());
+//                        timeList.add(orgTimingModel);
+                }
+
+                else if (getIntent().getStringExtra("orgNumber").equals("4")) {
+                    Log.e("Timing number", "6");
+                    //  mAdapter = new OrgDetailAdapter(timeList,this);
+                    mAdapter = new OrgDetailAdapter(timeList, this);
+
+                    recyclerViewTiming.setAdapter(mAdapter);
+                    org_timing = "6";
+                    getTime(org_timing);
+//                    List<OrgTimingModel> timings = dbHelper.getOrgTiming(org_timing);
+//                    //listView_MemberChild.setAdapter(childCursorAdapter);
+//                    for (OrgTimingModel cn : timings) {
+//
+//                        orgTimingModel = new OrgTimingModel(cn.getName(),
+//                                cn.getPhone(),
+//                                cn.getTiming_number(),
+//                                cn.getMember_type()
+//
+//                        );
+//                        // Log.e("Image member",cn.getMemberimagepath());
+//                        //                    orgDetailModel.setName(cn.getName());
+////                    orgDetailModel.setDesignation(cn.getDesignation());
+////                    orgDetailModel.setPhone(cn.getPhone());
+//                        timeList.add(orgTimingModel);
+                }
+
+
+
+                else {
 
                     rl_header.setVisibility(View.GONE);
 

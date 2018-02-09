@@ -23,7 +23,6 @@
         <ImageView
             android:src="@drawable/sample"
             android:layout_centerHorizontal="true"
-            android:padding="8dp"
         android:background="@drawable/image_bg"
         android:id="@+id/iv_our_vicar"
         android:layout_width="400dp"

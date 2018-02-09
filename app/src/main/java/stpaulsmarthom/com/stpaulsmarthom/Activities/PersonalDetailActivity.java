@@ -120,9 +120,11 @@ public class PersonalDetailActivity extends AppCompatActivity implements View.On
         parish_member_blood.setAllCaps(true);
 
         parish_marital_status.setText(getIntent().getStringExtra("parish_marital_status"));
-        parish_area.setAllCaps(true);
+        parish_marital_status.setAllCaps(true);
 
-        parish_marital_status.setText(getIntent().getStringExtra("parish_dom"));
+        parish_dom.setText(getIntent().getStringExtra("parish_dom"));
+        parish_dom.setAllCaps(true);
+
         parish_dob.setText(getIntent().getStringExtra("parish_dob"));
         parish_dob.setAllCaps(true);
 
@@ -134,6 +136,8 @@ public class PersonalDetailActivity extends AppCompatActivity implements View.On
 
         parish_tel_res.setText(getIntent().getStringExtra("parish_tel_res"));
         parish_tel_res.setAllCaps(true);
+
+        parish_tel_off.setText(getIntent().getStringExtra("parish_tel_off"));
 
         parish_tel_mobile.setText(getIntent().getStringExtra("parish_tel_mobile"));
         parish_tel_mobile.setAllCaps(true);
@@ -168,9 +172,15 @@ public class PersonalDetailActivity extends AppCompatActivity implements View.On
 
 public void sendEmail(String emailAddress)
 {
+//    Intent testIntent = new Intent(Intent.ACTION_SENDTO);
+//    testIntent.setData(Uri.parse("mailto:"+emailAddress));
+//    startActivity(testIntent);
     Intent testIntent = new Intent(Intent.ACTION_SENDTO);
-    testIntent.setData(Uri.parse("mailto:"+emailAddress));
-    startActivity(testIntent);
+    testIntent.setData(Uri.parse("mailto:"));
+    testIntent.putExtra(Intent.EXTRA_EMAIL  , new String[] {emailAddress });
+    testIntent.putExtra(Intent.EXTRA_SUBJECT, "My subject");
+
+    startActivity(Intent.createChooser(testIntent, "Email via..."));
 }
 
 

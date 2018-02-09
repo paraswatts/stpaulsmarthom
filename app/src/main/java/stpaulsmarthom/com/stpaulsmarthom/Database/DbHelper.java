@@ -27,6 +27,7 @@ import java.util.ArrayList;
 import java.util.List;
 
 import stpaulsmarthom.com.stpaulsmarthom.ModelClasses.AboutUsModel;
+import stpaulsmarthom.com.stpaulsmarthom.ModelClasses.AchensModel;
 import stpaulsmarthom.com.stpaulsmarthom.ModelClasses.BishopModel;
 import stpaulsmarthom.com.stpaulsmarthom.ModelClasses.ChildModel;
 import stpaulsmarthom.com.stpaulsmarthom.ModelClasses.ContactUsModel;
@@ -67,6 +68,8 @@ public class DbHelper extends SQLiteOpenHelper {
 
     private static String SQL_CREATE_PUBLICATIONS_TABLE;
 
+    private static String SQL_CREATE_ACHENS_TABLE;
+
 
     private static String SQL_CREATE_PRIVACY_TABLE;
 
@@ -106,7 +109,9 @@ public class DbHelper extends SQLiteOpenHelper {
         SQL_CREATE_ABOUT_US_TABLE =  "CREATE TABLE " + DbContract.DbEntry.TABLE_ABOUT_US + " ("
                 + _ID + " INTEGER PRIMARY KEY AUTOINCREMENT,"
                 + COLUMN_ABOUT_US_CONTENT + " TEXT,"
-                + COLUMN_ABOUT_US_IMAGE + " TEXT" +")";
+                + COLUMN_ABOUT_US_IMAGE + " TEXT,"
+                + COLUMN_ABOUT_US_CHURCH_TIMING_ENGLISH + " TEXT,"
+                + COLUMN_ABOUT_US_CHURCH_TIMING_MALAYALAM + " TEXT" +")";
 
         SQL_CREATE_PRIVACY_TABLE=  "CREATE TABLE " + DbContract.DbEntry.TABLE_PRIVACY + " ("
                 + _ID + " INTEGER PRIMARY KEY AUTOINCREMENT,"
@@ -248,6 +253,14 @@ public class DbHelper extends SQLiteOpenHelper {
                 + PUBLICATIONS_PDF_PATH + " TEXT,"
                 + PUBLICATIONS_PDF_IMAGE + " TEXT" +")";
 
+
+        SQL_CREATE_ACHENS_TABLE =  "CREATE TABLE " + DbContract.DbEntry.TABLE_ACHENS + " ("
+                + _ID + " INTEGER PRIMARY KEY AUTOINCREMENT,"
+                + ACHENS_PDF_NAME + " TEXT,"
+                + ACHENS_PDF_PATH + " TEXT,"
+                + ACHENS_PDF_IMAGE + " TEXT" +")";
+
+
         db.execSQL(SQL_CREATE_PRIVACY_TABLE);
 
         db.execSQL(SQL_CREATE_ABOUT_US_TABLE);
@@ -274,7 +287,11 @@ public class DbHelper extends SQLiteOpenHelper {
 
         db.execSQL(SQL_CREATE_PARISH_CHILD);
 
+        db.execSQL(SQL_CREATE_ACHENS_TABLE);
+
+
     }
+
 
     /**
      * This is called when the database needs to be upgraded.
@@ -315,6 +332,8 @@ public class DbHelper extends SQLiteOpenHelper {
         ContentValues values = new ContentValues();
         values.put(COLUMN_ABOUT_US_CONTENT, aboutUsModel.getAboutUsContent());
         values.put(COLUMN_ABOUT_US_IMAGE, aboutUsModel.getAboutUsImage());
+        values.put(COLUMN_ABOUT_US_CHURCH_TIMING_ENGLISH, aboutUsModel.getChurchTimeEnglish());
+        values.put(COLUMN_ABOUT_US_CHURCH_TIMING_MALAYALAM, aboutUsModel.getChurchTimeMalayalam());
         db.insert(DbContract.DbEntry.TABLE_ABOUT_US,null,values);
         db.close();
     }
@@ -449,6 +468,19 @@ public class DbHelper extends SQLiteOpenHelper {
 
 
         db.insert(DbContract.DbEntry.TABLE_PUBLICATIONS,null,values);
+        db.close();
+    }
+
+    public void addAchens(AchensModel achensModel)
+    {
+        SQLiteDatabase db = this.getWritableDatabase();
+        ContentValues values = new ContentValues();
+        values.put(ACHENS_PDF_NAME, achensModel.getName());
+        values.put(ACHENS_PDF_IMAGE, achensModel.getImage_path());
+        values.put(ACHENS_PDF_PATH, achensModel.getFile_path());
+
+
+        db.insert(DbContract.DbEntry.TABLE_ACHENS,null,values);
         db.close();
     }
 

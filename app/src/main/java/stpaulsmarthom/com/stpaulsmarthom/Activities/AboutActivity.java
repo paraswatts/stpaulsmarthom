@@ -55,6 +55,7 @@ import stpaulsmarthom.com.stpaulsmarthom.R;
 public class AboutActivity extends AppCompatActivity {
 
     TextView myActionBarTitle;
+    TextView tv_english,tv_malayalam;
     WebView tv_about_us;
     AboutUsModel aboutUsModel;
     DbHelper dbHelper;
@@ -82,6 +83,10 @@ public class AboutActivity extends AppCompatActivity {
         myActionBarTitle = (TextView)findViewById(R.id.myActionBarTitle);
         myActionBarTitle.setText("ABOUT US");
         iv_about_us = findViewById(R.id.iv_about_us);
+        tv_english = findViewById(R.id.tv_english);
+        tv_malayalam = findViewById(R.id.tv_malayalam);
+
+
         ImageView iv_home = findViewById(R.id.home);
         iv_home.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -163,6 +168,8 @@ public class AboutActivity extends AppCompatActivity {
 
 
                     }
+                    tv_english.setText(query.getString(3));
+                    tv_malayalam.setText(query.getString(4));
                     //tv_about_us.setText(aboutUsContent);
                     String text;
                     text = "<html><body  style=\"text-align:justify;\">";
@@ -236,6 +243,8 @@ public class AboutActivity extends AppCompatActivity {
                             text += "</body></html>";
                             tv_about_us.loadData(text,"text/html", "utf-8");
                             aboutUsModel.setAboutUsContent(jsonObject1.getString("content"));
+                            tv_english.setText(jsonObject1.getString("timing_english"));
+                            tv_malayalam.setText(jsonObject1.getString("timing_malayalam"));
                             //dbHelper.addAboutUsContent(aboutUsModel);
                             Picasso picasso = Picasso.with(getApplicationContext());
                             picasso.setIndicatorsEnabled(false);

@@ -5,7 +5,6 @@
     android:orientation="horizontal" >
 
     <TextView
-        android:layout_marginLeft="-16dp"
         android:textStyle="bold"
         android:gravity="center"
         android:layout_weight="9"

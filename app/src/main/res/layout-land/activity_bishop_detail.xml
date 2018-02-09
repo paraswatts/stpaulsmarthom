@@ -10,7 +10,7 @@
     android:orientation="vertical"
     android:background="#fff"
     tools:context="stpaulsmarthom.com.stpaulsmarthom.Activities.BishopDetailActivity">
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
@@ -20,6 +20,7 @@
     tools:context="stpaulsmarthom.com.stpaulsmarthom.Activities.BishopDetailActivity">
 
     <LinearLayout
+        android:layout_above="@+id/stripe"
         android:id="@+id/ll_bishop_detail"
         android:layout_margin="8dp"
         android:orientation="vertical"
@@ -141,6 +142,21 @@
 
             </LinearLayout>
         </LinearLayout>
+
 </LinearLayout>
-</LinearLayout>
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_alignParentBottom="true"
+        android:id="@+id/stripe"
+        android:background="#a3cc2e"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp"
+        android:layout_marginBottom="8dp"
+        android:layout_width="match_parent"
+        android:layout_height="50dp">
+
+
+    </LinearLayout>
+</RelativeLayout>
 </ScrollView>

@@ -22,5 +22,4 @@ public class APIUrl {
         }
         return retrofit;
     }
-
 }

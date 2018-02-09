@@ -6,7 +6,9 @@ import com.google.gson.JsonObject;
 import okhttp3.ResponseBody;
 import retrofit2.Call;
 import retrofit2.http.Field;
+import retrofit2.http.FormUrlEncoded;
 import retrofit2.http.GET;
+import retrofit2.http.POST;
 import retrofit2.http.Query;
 
 /**
@@ -17,6 +19,8 @@ public interface APIService {
 
     @GET("organizations.php?pages=about_us")
     Call<JsonElement> getAboutUs();
+
+
 
     @GET("organizations.php?pages=Policy")
     Call<JsonElement> getPrivacy();
@@ -39,6 +43,9 @@ public interface APIService {
     @GET("organizations.php?pages=publications")
     Call<JsonElement> getPublications();
 
+    @GET("organizations.php?pages=achens_letter")
+    Call<JsonElement> getAchens();
+
     @GET("organizations.php?")
     Call<JsonElement> getOrgDetail(@Query("org") String orgNumber);
 
@@ -58,4 +65,7 @@ public interface APIService {
 
     @GET("prayer_api.php?")
     Call<JsonElement> sendPrayer(@Query("Name") String name,@Query("Email") String email,@Query("PhoneNumber") String phone,@Query("RollNumber") String rollno,@Query("PrayerSubject") String prayerSubject,@Query("PrayerMessage") String prayerMessage);
+
+    @GET("Sunday_School_Prayer.php?")
+    Call<JsonElement> sendPrayerSundaySchool(@Query("Name") String name,@Query("Email") String email,@Query("PhoneNumber") String phone,@Query("RollNumber") String rollno,@Query("PrayerSubject") String prayerSubject,@Query("PrayerMessage") String prayerMessage);
 }

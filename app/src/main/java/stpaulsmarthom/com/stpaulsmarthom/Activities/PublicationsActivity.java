@@ -21,7 +21,7 @@ import stpaulsmarthom.com.stpaulsmarthom.R;
 
 public class PublicationsActivity extends AppCompatActivity implements View.OnClickListener {
 
-    RelativeLayout rl_parish,rl_year_planner;
+    RelativeLayout rl_parish,rl_year_planner,rl_archen_letter;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -61,10 +61,12 @@ public class PublicationsActivity extends AppCompatActivity implements View.OnCl
         rl_parish = (RelativeLayout)findViewById(R.id.rl_parish);
         rl_year_planner = (RelativeLayout)findViewById(R.id.rl_year_planner);
 
+        rl_archen_letter = (RelativeLayout)findViewById(R.id.rl_archen_letter);
+
+
         rl_parish.setOnClickListener(this);
-
+        rl_archen_letter.setOnClickListener(this);
         rl_year_planner.setOnClickListener(this);
-
 
     }
 
@@ -80,6 +82,18 @@ public class PublicationsActivity extends AppCompatActivity implements View.OnCl
                 //Toast.makeText(this, "Please connect to internet .", Toast.LENGTH_SHORT).show();
                // startActivity(new Intent(this, ParishOfflineActivity.class));
            // }
+
+        }
+
+        if(view.getId() == R.id.rl_archen_letter)
+        {
+            //if(isConnected(PublicationsActivity.this)) {
+            startActivity(new Intent(this, ArchensLetterActivity.class));
+            //}
+            // else{
+            //Toast.makeText(this, "Please connect to internet .", Toast.LENGTH_SHORT).show();
+            // startActivity(new Intent(this, ParishOfflineActivity.class));
+            // }
 
         }
         if(view.getId() == R.id.rl_year_planner)

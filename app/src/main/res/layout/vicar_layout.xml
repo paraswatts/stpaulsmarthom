@@ -21,7 +21,6 @@
             android:progressDrawable="@drawable/vicar_progress"/>
 
         <ImageView
-            android:padding="8dp"
             android:src="@drawable/sample"
         android:background="@drawable/image_bg"
         android:id="@+id/iv_our_vicar"

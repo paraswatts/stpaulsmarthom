@@ -222,7 +222,7 @@ public class ResourcesActivity extends AppCompatActivity {
                     if (!TextUtils.isEmpty(path)) {
                         String downloaded = preferences1.getString(path,"");
                         if(downloaded.equals("yes")) {
-                            view(path,"Kristeeya Keerthanangal(Alphabetical order)");
+                            view(path,"Kristeeya Keerthanangal (Alphabetical order)");
                         }
                         else
                         {
@@ -250,7 +250,7 @@ public class ResourcesActivity extends AppCompatActivity {
                     if (!TextUtils.isEmpty(path)) {
                         String downloaded = preferences1.getString(path,"");
                         if(downloaded.equals("yes")) {
-                            view( path,"Kristeeya Keerthanangal(Number order)");
+                            view( path,"Kristeeya Keerthanangal (Number order)");
                         }
                         else
                         {

@@ -193,14 +193,20 @@ public class PrayerRequestActivity extends AppCompatActivity {
         progressDialog.setCancelable(false);
         progressDialog.show();
         APIService service = APIUrl.getClient().create(APIService.class);
-
-        Call<JsonElement> call = service.sendPrayer(name,email,phone,rollno,prayerSubject,prayerMessage);
+        Call<JsonElement> call =null;
+        if(getIntent().getStringExtra("api").equals("1")) {
+            call = service.sendPrayerSundaySchool(name, email, phone, rollno, prayerSubject, prayerMessage);
+        }
+        else
+        {
+            call = service.sendPrayer(name, email, phone, rollno, prayerSubject, prayerMessage);
+        }
 
         call.enqueue(new Callback<JsonElement>() {
             @Override
             public void onResponse(Call<JsonElement> call, Response<JsonElement> response) {
                 progressDialog.dismiss();
-               // Log.d("URL", "=====" + response.raw().request().url());
+               Log.d("URL", "=====" + response.raw().request().url());
 
                 //Log.e("getting about us", ""+response.body().toString());
 

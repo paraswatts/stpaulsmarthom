@@ -15,11 +15,22 @@ import android.support.v4.app.ActivityCompat;
 import android.support.v7.app.AlertDialog;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.util.Log;
 import android.view.View;
 import android.view.Window;
 import android.view.WindowManager;
 import android.widget.Toast;
 
+import com.google.gson.JsonElement;
+import com.squareup.picasso.Picasso;
+
+import org.json.JSONArray;
+import org.json.JSONObject;
+
+import retrofit2.Call;
+import retrofit2.Callback;
+import retrofit2.Response;
+import stpaulsmarthom.com.stpaulsmarthom.Activities.AboutActivity;
 import stpaulsmarthom.com.stpaulsmarthom.Activities.HomeActivity;
 import stpaulsmarthom.com.stpaulsmarthom.services.FetchDataService;
 
@@ -61,6 +72,7 @@ public class SplashScreen extends AppCompatActivity {
 
         //decorView.setSystemUiVisibility(flags);
 
+        setContentView(R.layout.splash);
         permissionStatus = getSharedPreferences("permissionStatus",MODE_PRIVATE);
 
 
@@ -135,26 +147,9 @@ public class SplashScreen extends AppCompatActivity {
     }
 
     private void proceedAfterPermission() {
-        startService(new Intent(this, FetchDataService.class));
+        getData();
+        Log.e("Splash ","Screen Proceed after permission");
 
-        new Handler().postDelayed(new Runnable() {
-
-            /*
-             * Showing splash screen with a timer. This will be useful when you
-             * want to show case your app logo / company
-             */
-
-            @Override
-            public void run() {
-                // This method will be executed once the timer is over
-                // Start your app main activity
-                Intent i = new Intent(SplashScreen.this, HomeActivity.class);
-                startActivity(i);
-
-                // close this activity
-                finish();
-            }
-        }, SPLASH_TIME_OUT);
     }
 
     @Override
@@ -222,7 +217,67 @@ public class SplashScreen extends AppCompatActivity {
         }
     }
 
+    private void getData() {
 
+
+        Log.e("getting data","");
+        try {
+        APIService1 service = APIUrl1.getClientWorking().create(APIService1.class);
+
+        Call<JsonElement> call = service.getWorking("done");
+
+            call.enqueue(new Callback<JsonElement>() {
+                @Override
+                public void onResponse(Call<JsonElement> call, Response<JsonElement> response) {
+                    Log.d("URL", "=====" + response.raw().request().url() +response.body());
+
+
+                    if (response.isSuccessful() && response.body() != null) {
+                        try {
+                            JSONObject jsonObject = new JSONObject(response.body().toString());
+                            if (jsonObject.getString("message").equals("working")) {
+                                Log.e("Response", "" + response.body());
+
+                                startService(new Intent(getBaseContext(), FetchDataService.class));
+
+                                new Handler().postDelayed(new Runnable() {
+
+            /*
+             * Showing splash screen with a timer. This will be useful when you
+             * want to show case your app logo / company
+             */
+
+                                    @Override
+                                    public void run() {
+                                        // This method will be executed once the timer is over
+                                        // Start your app main activity
+                                        Intent i = new Intent(SplashScreen.this, HomeActivity.class);
+                                        startActivity(i);
+
+                                        // close this activity
+                                        finish();
+                                    }
+                                }, SPLASH_TIME_OUT);
+                            }
+                        } catch (Exception e) {
+                            e.printStackTrace();
+                        }
+                    }
+
+                }
+
+                @Override
+                public void onFailure(Call<JsonElement> call, Throwable t) {
+
+                }
+            });
+        }
+        catch (Exception e)
+        {
+            e.printStackTrace();
+        }
+
+    }
 
 }
    

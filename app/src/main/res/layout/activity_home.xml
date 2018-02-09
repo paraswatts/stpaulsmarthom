@@ -532,13 +532,12 @@
                 android:src="@drawable/rectangle_dark_yellow"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
-
                 />
             <ImageView
-                android:src="@drawable/home2"
+                android:src="@drawable/logo"
                 android:layout_centerInParent="true"
-                android:layout_width="30dp"
-                android:layout_height="30dp" />
+                android:layout_width="20dp"
+                android:layout_height="22dp" />
         </RelativeLayout>
         <RelativeLayout
             android:id="@+id/rl_dir"

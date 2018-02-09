@@ -101,7 +101,10 @@ public class ContactUsActivity extends AppCompatActivity implements OnMapReadyCa
         bt_prayer_request.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                startActivity(new Intent(ContactUsActivity.this,PrayerRequestActivity.class));
+                Intent intent = new Intent(ContactUsActivity.this,PrayerRequestActivity.class);
+                intent.putExtra("api","2");
+                startActivity(intent);
+
             }
         });
         if (isConnected(getApplicationContext())) {

@@ -61,6 +61,9 @@ public final class DbContract {
 
     public static final String PATH_PUBLICATIONS = "parish_publications";
 
+
+    public static final String PATH_ACHENS = "achens_letter";
+
     public static final String PATH_CHILD = "parish_child";
 
 
@@ -104,6 +107,7 @@ public final class DbContract {
         public static final Uri CONTENT_URI_PARISH_MEMBER = Uri.withAppendedPath(BASE_CONTENT_URI, PATH_PARISH_MEMBERS);
         public static final Uri CONTENT_URI_PARISH_PUBLICATIONS = Uri.withAppendedPath(BASE_CONTENT_URI, PATH_PUBLICATIONS);
 
+        public static final Uri CONTENT_URI_PARISH_ACHENS = Uri.withAppendedPath(BASE_CONTENT_URI, PATH_ACHENS);
 
         /**
 
@@ -131,6 +135,10 @@ public final class DbContract {
         public static final String CONTENT_LIST_TYPE_PARISH_MEMBER = ContentResolver.CURSOR_DIR_BASE_TYPE + "/" + CONTENT_AUTHORITY + "/" + PATH_PARISH_MEMBERS;
 
         public static final String CONTENT_LIST_TYPE_PUBLICATIONS = ContentResolver.CURSOR_DIR_BASE_TYPE + "/" + CONTENT_AUTHORITY + "/" + PATH_PUBLICATIONS;
+
+
+        public static final String CONTENT_LIST_TYPE_ACHENS = ContentResolver.CURSOR_DIR_BASE_TYPE + "/" + CONTENT_AUTHORITY + "/" + PATH_ACHENS;
+
 
 
         public static final String CONTENT_ITEM_TYPE_CHILD =
@@ -165,6 +173,10 @@ public final class DbContract {
                 ContentResolver.CURSOR_ITEM_BASE_TYPE + "/" + CONTENT_AUTHORITY + "/" + PATH_PUBLICATIONS;
 
 
+        public static final String CONTENT_ITEM_TYPE_ACHENS =
+                ContentResolver.CURSOR_ITEM_BASE_TYPE + "/" + CONTENT_AUTHORITY + "/" + PATH_ACHENS;
+
+
 
         /** Name of database tables */
         public final static String TABLE_CHILD = "child";
@@ -196,6 +208,9 @@ public final class DbContract {
 
         public final static String TABLE_PUBLICATIONS = "publications";
 
+        public final static String TABLE_ACHENS = "achens";
+
+
         public final static String COLUMN_ORG_SECTION = "org_section";
 
         public final static String COLUMN_ORG_SECTION_NUMBER = "org_section_number";
@@ -217,6 +232,10 @@ public final class DbContract {
         public final static String COLUMN_ABOUT_US_CONTENT = "about_us_content";
 
         public final static String COLUMN_ABOUT_US_IMAGE = "about_us_image";
+
+        public final static String COLUMN_ABOUT_US_CHURCH_TIMING_ENGLISH = "church_english";
+
+        public final static String COLUMN_ABOUT_US_CHURCH_TIMING_MALAYALAM = "church_malayalam";
 
         public final static String COLUMN_BISHOP_NAME = "bishop_name";
 
@@ -328,6 +347,12 @@ public final class DbContract {
 
         public final static String PUBLICATIONS_PDF_IMAGE = "pdf_image";
 
+
+        public final static String ACHENS_PDF_NAME = "achens_pdf_name";
+
+        public final static String ACHENS_PDF_PATH = "achens_pdf_path";
+
+        public final static String ACHENS_PDF_IMAGE = "achens_pdf_image";
 
 
         public final static String PARISH_CHILD_NAME = "child_name";

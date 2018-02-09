@@ -30,6 +30,7 @@ import retrofit2.Response;
 import stpaulsmarthom.com.stpaulsmarthom.Database.DbContract;
 import stpaulsmarthom.com.stpaulsmarthom.Database.DbHelper;
 import stpaulsmarthom.com.stpaulsmarthom.ModelClasses.AboutUsModel;
+import stpaulsmarthom.com.stpaulsmarthom.ModelClasses.AchensModel;
 import stpaulsmarthom.com.stpaulsmarthom.ModelClasses.BishopModel;
 import stpaulsmarthom.com.stpaulsmarthom.ModelClasses.ChildModel;
 import stpaulsmarthom.com.stpaulsmarthom.ModelClasses.ContactUsModel;
@@ -53,6 +54,8 @@ public class FetchThread implements Runnable {
     BishopModel bishopModel;
     static double lat,lng;
     ParishBulletinModel parishBulletinModel;
+    AchensModel achensModel;
+
     OrgTimingModel orgTimingModel;
 
     List<OrgTimingModel>
@@ -102,9 +105,10 @@ public class FetchThread implements Runnable {
             getKaisthanaData();
             getContactData();
             getPublicationsData();
+            getAchensData();
             getPrivacy();
             getYearPlannerData();
-            for (int i = 1; i <= 4; i++) {
+            for (int i = 1; i <= 6; i++) {
                 try {
 
                     getTiming(String.valueOf(i));
@@ -195,6 +199,8 @@ public class FetchThread implements Runnable {
                         {
                             //Log.e("File check","Already Exists");
                         }
+                        aboutUsModel.setChurchTimeEnglish(jsonObject1.getString("timing_english"));
+                        aboutUsModel.setChurchTimeMalayalam(jsonObject1.getString("timing_malayalam"));
                         aboutUsModel.setAboutUsContent(jsonObject1.getString("content"));
                         aboutUsModel.setAboutUsImage(mediaFile.getAbsolutePath());
                         dbHelper.addAboutUsContent(aboutUsModel);
@@ -1051,6 +1057,58 @@ public class FetchThread implements Runnable {
         });
 
     }
+
+    private void getAchensData() {
+
+
+        APIService service = APIUrl.getClient().create(APIService.class);
+
+        Call<JsonElement> call = service.getAchens();
+
+        call.enqueue(new Callback<JsonElement>() {
+            @Override
+            public void onResponse(Call<JsonElement> call, Response<JsonElement> response) {
+                //Log.d("URL", "=====" + response.raw().request().url());
+
+                //Log.e("getting about us", ""+response.body().toString());
+
+                if(response.isSuccessful() && response.body()!=null) {
+                    try {
+                        dbHelper.deleteTable(DbContract.DbEntry.TABLE_ACHENS);
+
+                        JSONObject jsonObject = new JSONObject(response.body().toString());
+
+                        JSONArray jsonArray = jsonObject.getJSONArray("Data");
+
+                        //Log.e("Array Length",""+jsonArray.length()+  jsonArray.getJSONObject(0));
+                        for(int i=0;i<jsonArray.length();i++) {
+                            JSONObject jsonObject1 = jsonArray.getJSONObject(i);
+
+                            achensModel = new AchensModel(jsonObject1.getString("Name")
+                                    ,jsonObject1.getString("file_name"),""
+
+                            );
+                            dbHelper.addAchens(achensModel);
+                        }
+
+
+                    } catch (Exception e) {
+                        e.printStackTrace();
+                        //Log.e("Exception pub",e.getMessage());
+                    }
+
+                }
+
+            }
+
+            @Override
+            public void onFailure(Call<JsonElement> call, Throwable t) {
+
+            }
+        });
+
+    }
+
 
     private void getYearPlannerData() {
 //

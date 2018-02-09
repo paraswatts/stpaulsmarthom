@@ -14,7 +14,7 @@
         android:layout_height="wrap_content">
 <LinearLayout android:layout_marginTop="8dp"
     android:layout_marginLeft="8dp"
-    android:background="#fff"
+    android:background="@drawable/textview_bg"
     android:layout_marginRight="8dp"
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
@@ -65,7 +65,7 @@ android:layout_height="wrap_content">
 </LinearLayout>
 
 <LinearLayout
-    android:background="#fff"
+    android:background="@drawable/textview_bg"
 android:layout_marginLeft="8dp"
 android:layout_marginRight="8dp"
 android:layout_width="match_parent"
@@ -115,7 +115,7 @@ android:layout_height="wrap_content">
     android:layout_height="wrap_content" />
 </LinearLayout>
 <LinearLayout
-    android:background="#fff"
+    android:background="@drawable/textview_bg"
 android:layout_marginLeft="8dp"
 android:layout_marginRight="8dp"
     android:orientation="vertical"
@@ -165,7 +165,7 @@ android:layout_height="wrap_content">
     android:layout_height="wrap_content" />
 </LinearLayout>
 <LinearLayout
-    android:background="#fff"
+    android:background="@drawable/textview_bg"
 android:layout_marginLeft="8dp"
 android:layout_marginRight="8dp"
 android:layout_width="match_parent"
@@ -215,7 +215,7 @@ android:layout_height="wrap_content">
     android:layout_height="wrap_content"/>
 </LinearLayout>
 <LinearLayout
-    android:background="#fff"
+    android:background="@drawable/textview_bg"
     android:orientation="vertical"
 android:layout_marginLeft="8dp"
 android:layout_marginRight="8dp"
@@ -268,13 +268,13 @@ android:layout_height="wrap_content">
 <!--android:layout_marginLeft="8dp"-->
 <!--android:layout_marginRight="8dp"-->
 <!--android:padding="4dp"-->
-<!--android:background="#fff"-->
+<!--android:background="@drawable/textview_bg"-->
 <!--android:textColor="#828282"-->
 <!--android:text="MAILING ADDRESS"-->
 <!--android:layout_width="match_parent"-->
 <!--android:layout_height="wrap_content" />-->
 <LinearLayout
-    android:background="#fff"
+    android:background="@drawable/textview_bg"
     android:orientation="vertical"
 android:layout_marginLeft="8dp"
 android:layout_marginRight="8dp"
@@ -324,7 +324,7 @@ android:layout_height="wrap_content">
     android:layout_height="wrap_content" />
 </LinearLayout>
 <LinearLayout
-    android:background="#fff"
+    android:background="@drawable/textview_bg"
     android:orientation="vertical"
 android:layout_marginLeft="8dp"
 android:layout_marginRight="8dp"
@@ -375,7 +375,7 @@ android:layout_height="wrap_content">
 </LinearLayout>
 <LinearLayout
     android:layout_marginBottom="8dp"
-    android:background="#fff"
+    android:background="@drawable/textview_bg"
     android:orientation="vertical"
 android:layout_marginLeft="8dp"
 android:layout_marginRight="8dp"

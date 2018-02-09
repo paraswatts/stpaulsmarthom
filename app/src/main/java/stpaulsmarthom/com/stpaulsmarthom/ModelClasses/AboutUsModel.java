@@ -8,6 +8,15 @@ public class AboutUsModel {
 
     String aboutUsContent;
     String aboutUsImage;
+    String churchTimeEnglish;
+    String churchTimeMalayalam;
+
+    public String getChurchTimeEnglish(){return churchTimeEnglish;}
+    public void setChurchTimeEnglish(String churchTimeEnglish){this.churchTimeEnglish = churchTimeEnglish;}
+
+    public String getChurchTimeMalayalam(){return churchTimeMalayalam;}
+    public void setChurchTimeMalayalam(String churchTimeMalayalam){this.churchTimeMalayalam = churchTimeMalayalam;}
+
 
     public String getAboutUsImage(){return aboutUsImage;}
 

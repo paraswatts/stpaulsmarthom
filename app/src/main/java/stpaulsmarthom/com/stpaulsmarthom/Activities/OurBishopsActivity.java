@@ -59,7 +59,6 @@ public class OurBishopsActivity extends AppCompatActivity implements  LoaderMana
     RecyclerView recyclerView;
     BishopModel bishopModel;
     ProgressBar mProgressBar;
-
     DbHelper dbHelper;
     ListView listView;
     OurBishopCursorAdapter ourBishopCursorAdapter;

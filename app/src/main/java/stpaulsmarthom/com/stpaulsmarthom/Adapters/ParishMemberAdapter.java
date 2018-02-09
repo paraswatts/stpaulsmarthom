@@ -186,8 +186,19 @@ public class ParishMemberAdapter extends RecyclerView.Adapter<ParishMemberAdapte
             public void onClick(View v) {
 
                 Intent testIntent = new Intent(Intent.ACTION_SENDTO);
-                testIntent.setData(Uri.parse("mailto:"+parish.getMailingadress()));
-                context.startActivity(testIntent);
+                testIntent.setData(Uri.parse("mailto:"));
+                testIntent.putExtra(Intent.EXTRA_EMAIL  , new String[] { parish.getMailingadress() });
+                testIntent.putExtra(Intent.EXTRA_SUBJECT, "My subject");
+
+                context.startActivity(Intent.createChooser(testIntent, "Email via..."));
+//
+//                Intent intent = new Intent(Intent.ACTION_SENDTO);
+//                intent.setType("message/rfc822");
+//                intent.putExtra(Intent.EXTRA_EMAIL, parish.getMailingadress());
+////                intent.putExtra(Intent.EXTRA_SUBJECT, "");
+////                intent.putExtra(Intent.EXTRA_TEXT, "");
+//
+//                context.startActivity(Intent.createChooser(intent, "Send Email"));
             }
         });
 
@@ -202,6 +213,7 @@ public class ParishMemberAdapter extends RecyclerView.Adapter<ParishMemberAdapte
         holder.iv_parish_next.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
+                Log.e("Marriage status",parish.getMembermarital()+parish.getMemberdatemarriage()+parish.getTelephone());
                 Intent parishDetailIntent = new Intent(context, ParishMemberDetailList.class);
                 parishDetailIntent.putExtra("parish_member_name",parish.getMembername());
                 parishDetailIntent.putExtra("parish_roll_no",parish.getMembernamerollno());
@@ -230,7 +242,7 @@ public class ParishMemberAdapter extends RecyclerView.Adapter<ParishMemberAdapte
                 parishDetailIntent.putExtra("parish_pin",parish.getPinindia());
                 parishDetailIntent.putExtra("parish_state",parish.getStateindia());
                 parishDetailIntent.putExtra("parish_tel_code",parish.getTelcodeindia());
-                parishDetailIntent.putExtra("parish_mobile",parish.getTelephonemob3());
+                parishDetailIntent.putExtra("parish_mobile",parish.getMobcodeindia());
                 parishDetailIntent.putExtra("parish_wife_name",parish.getWifename());
                 parishDetailIntent.putExtra("parish_dob_wife",parish.getDatebrithfamily());
                 parishDetailIntent.putExtra("parish_emplr_name",parish.getEmaploynamefamily());
@@ -246,6 +258,9 @@ public class ParishMemberAdapter extends RecyclerView.Adapter<ParishMemberAdapte
                 parishDetailIntent.putExtra("parish_native",parish.getNativefamily());
                 parishDetailIntent.putExtra("iv_parish_member_detail",parish.getMemberimagepath());
                 parishDetailIntent.putExtra("parish_member_wife",parish.getWife_image());
+                parishDetailIntent.putExtra("parish_emer_tel_office",parish.getTelindiaemergency());
+                parishDetailIntent.putExtra("parish_tel_off_bah",parish.getTelephoneemergency());
+
                 context.startActivity(parishDetailIntent);
             }
         });

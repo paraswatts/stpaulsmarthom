@@ -20,7 +20,9 @@
         android:layout_width="270dp"
         android:layout_height="330dp" />
     <TextView
-        android:textColor="#000"
+        android:background="#eb4142"
+        android:textColor="#fff"
+        android:padding="4dp"
         android:id="@+id/tc_mem_name"
         android:layout_marginTop="8dp"
         android:textSize="30sp"

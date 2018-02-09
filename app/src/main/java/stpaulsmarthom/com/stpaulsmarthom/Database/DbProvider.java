@@ -90,6 +90,12 @@ public class DbProvider extends ContentProvider {
     private static final int CHILD_ID = 801;
 
 
+    private static final int ACHENS = 900;
+
+
+
+    private static final int ACHENS_ID = 901;
+
     /** URI matcher code for the content URI for a single pet in the pets table */
 
 
@@ -127,6 +133,9 @@ public class DbProvider extends ContentProvider {
 
         sUriMatcher.addURI(DbContract.CONTENT_AUTHORITY, DbContract.PATH_PUBLICATIONS, PUBLICATIONS);
 
+        sUriMatcher.addURI(DbContract.CONTENT_AUTHORITY, DbContract.PATH_ACHENS, ACHENS);
+
+
         // The content URI of the form "content://com.example.android.pets/pets/#" will map to the
         // integer code {@link #USER_ID}. This URI is used to provide access to ONE single row
         // of the pets table.
@@ -154,6 +163,7 @@ public class DbProvider extends ContentProvider {
 
         sUriMatcher.addURI(DbContract.CONTENT_AUTHORITY, DbContract.PATH_PUBLICATIONS + "/#", PUBLICATIONS_ID);
 
+        sUriMatcher.addURI(DbContract.CONTENT_AUTHORITY, DbContract.PATH_ACHENS + "/#", ACHENS_ID);
 
     }
 
@@ -330,6 +340,23 @@ public class DbProvider extends ContentProvider {
                         null, null, sortOrder);
                 break;
 
+            case ACHENS:
+                cursor = database.query(DbContract.DbEntry.TABLE_ACHENS, projection, selection, selectionArgs,
+                        null, null, sortOrder);
+                break;
+
+
+
+
+            case ACHENS_ID:
+
+                selection = DbContract.DbEntry._ID + "=?";
+                selectionArgs = new String[] { String.valueOf(ContentUris.parseId(uri)) };
+
+                cursor = database.query(DbContract.DbEntry.TABLE_ACHENS, projection, selection, selectionArgs,
+                        null, null, sortOrder);
+                break;
+
             default:
                 throw new IllegalArgumentException("Cannot query unknown URI " + uri);
         }
@@ -501,6 +528,12 @@ public class DbProvider extends ContentProvider {
                 return DbContract.DbEntry.CONTENT_LIST_TYPE_CHILD;
             case CHILD_ID:
                 return DbContract.DbEntry.CONTENT_ITEM_TYPE_CHILD;
+
+            case ACHENS:
+                return DbContract.DbEntry.CONTENT_LIST_TYPE_ACHENS;
+            case ACHENS_ID:
+                return DbContract.DbEntry.CONTENT_ITEM_TYPE_ACHENS;
+
 
             default:
                 throw new IllegalStateException("Unknown URI " + uri + " with match " + match);

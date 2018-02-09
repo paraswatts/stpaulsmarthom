@@ -6,11 +6,11 @@
      android:layout_width="match_parent"
     android:orientation="vertical"
     android:scrollbars="none"
-    android:background="#FFF"
+    android:background="@drawable/textview_bg"
 
     >
     <LinearLayout
-        android:background="#FFF"
+        android:background="@drawable/textview_bg"
 
         android:orientation="vertical"
         android:layout_width="match_parent"
@@ -44,7 +44,7 @@
                 android:layout_height="wrap_content" />
         </LinearLayout>
         <LinearLayout
-            android:background="#fff"
+            android:background="@drawable/textview_bg"
 
             android:layout_marginLeft="8dp"
             android:layout_marginRight="8dp"
@@ -98,7 +98,7 @@
             android:layout_height="wrap_content" />
     </LinearLayout>
         <LinearLayout
-            android:background="#fff"
+            android:background="@drawable/textview_bg"
 
             android:orientation="vertical"
             android:layout_marginLeft="8dp"
@@ -154,7 +154,7 @@
                 android:layout_height="wrap_content"/>
         </LinearLayout>
         <LinearLayout
-            android:background="#fff"
+            android:background="@drawable/textview_bg"
 
             android:orientation="vertical"
             android:layout_marginLeft="8dp"
@@ -209,7 +209,7 @@
             android:layout_height="wrap_content" />
     </LinearLayout>
         <LinearLayout
-            android:background="#fff"
+            android:background="@drawable/textview_bg"
 
             android:orientation="vertical"
             android:layout_marginLeft="8dp"

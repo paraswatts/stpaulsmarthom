@@ -130,9 +130,16 @@ public class AddressIndiaActivity extends AppCompatActivity implements View.OnCl
 
 public void sendEmail(String emailAddress)
 {
+//    Intent testIntent = new Intent(Intent.ACTION_SENDTO);
+//    testIntent.setData(Uri.parse("mailto:"+emailAddress));
+//    startActivity(testIntent);
+
     Intent testIntent = new Intent(Intent.ACTION_SENDTO);
-    testIntent.setData(Uri.parse("mailto:"+emailAddress));
-    startActivity(testIntent);
+    testIntent.setData(Uri.parse("mailto:"));
+    testIntent.putExtra(Intent.EXTRA_EMAIL  , new String[] {emailAddress });
+    testIntent.putExtra(Intent.EXTRA_SUBJECT, "My subject");
+
+    startActivity(Intent.createChooser(testIntent, "Email via..."));
 }
 
 

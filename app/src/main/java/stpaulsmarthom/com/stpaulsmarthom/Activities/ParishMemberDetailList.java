@@ -216,6 +216,7 @@ public class ParishMemberDetailList extends AppCompatActivity implements View.On
             personalDetails.putExtra("parish_area",getIntent().getStringExtra("parish_area"));
             personalDetails.putExtra("parish_years_bah",getIntent().getStringExtra("parish_years_bah"));
             personalDetails.putExtra("parish_member_blood",getIntent().getStringExtra("parish_member_blood"));
+            Log.e("Date of marriage",getIntent().getStringExtra("parish_marital_status")+getIntent().getStringExtra("parish_dom"));
             personalDetails.putExtra("parish_marital_status",getIntent().getStringExtra("parish_marital_status"));
             personalDetails.putExtra("parish_dom",getIntent().getStringExtra("parish_dom"));
             personalDetails.putExtra("parish_dob",getIntent().getStringExtra("parish_dob"));
@@ -225,7 +226,7 @@ public class ParishMemberDetailList extends AppCompatActivity implements View.On
             personalDetails.putExtra("parish_tel_mobile",getIntent().getStringExtra("parish_tel_mobile"));
             personalDetails.putExtra("parish_fax",getIntent().getStringExtra("parish_fax"));
             personalDetails.putExtra("parish_home",getIntent().getStringExtra("parish_home"));
-
+            personalDetails.putExtra("parish_tel_off",getIntent().getStringExtra("parish_tel_off"));
             startActivity(personalDetails);
             
         }

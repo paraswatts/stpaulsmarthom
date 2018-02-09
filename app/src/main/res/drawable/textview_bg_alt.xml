@@ -12,7 +12,7 @@ android:shape="rectangle" android:padding="10dp">
             <solid android:color="#efefef"/>
             <stroke
                 android:width="2dp"
-                android:color="#a09e9d" />
+                android:color="#eb4142" />
         </shape>
     </item>
 </layer-list>

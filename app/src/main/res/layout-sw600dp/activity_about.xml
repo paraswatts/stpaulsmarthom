@@ -17,10 +17,77 @@
     android:padding="8dp"
     tools:context="stpaulsmarthom.com.stpaulsmarthom.Activities.AboutActivity">
 
+    <LinearLayout
+        android:layout_margin="8dp"
+        android:padding="4dp"
+        android:layout_below="@id/iv_about_us"
+
+        android:id="@+id/ll_about_us"
+        android:background="#367eae"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TextView
+            android:id="@+id/time_header"
+            android:textAlignment="center"
+            android:textSize="35dp"
+            android:textColor="#fff"
+            android:text="CHURCH TIMINGS"
+            android:textStyle="bold"
+            android:layout_below="@id/tv_about_us"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+        <TextView
+            android:id="@+id/english"
+            android:textAlignment="center"
+            android:textSize="25dp"
+            android:textColor="#fff"
+            android:text="Church Holy Qurbana(English)"
+            android:textStyle="bold"
+            android:layout_marginTop="8dp"
+            android:layout_below="@id/time_header"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            android:id="@+id/tv_english"
+            android:textAlignment="center"
+            android:textSize="20dp"
+            android:textColor="#fff"
+            tools:text="ENGLISH"
+            android:layout_marginTop="8dp"
+            android:layout_below="@id/english"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            android:id="@+id/malayalam"
+            android:textAlignment="center"
+            android:textSize="25dp"
+            android:textColor="#fff"
+            android:text="Church Holy Qurbana(Malayalam)"
+            android:textStyle="bold"
+            android:layout_marginTop="8dp"
+            android:layout_below="@id/tv_english"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+
+        <TextView
+            android:id="@+id/tv_malayalam"
+            android:textAlignment="center"
+            android:textSize="20dp"
+            android:textColor="#fff"
+            tools:text="ENGLISH"
+            android:layout_marginTop="8dp"
+            android:layout_below="@id/malayalam"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
     <ImageView
+
         android:src="@drawable/sample"
         android:background="@drawable/image_bg"
-        android:padding="8dp"
         android:layout_centerHorizontal="true"
         android:id="@+id/iv_about_us"
         android:layout_width="380dp"
@@ -28,7 +95,7 @@
     <LinearLayout
         android:layout_margin="8dp"
 
-        android:layout_below="@id/iv_about_us"
+        android:layout_below="@id/ll_about_us"
         android:id="@+id/ll2"
         android:orientation="horizontal"
         android:layout_width="match_parent"
@@ -57,6 +124,7 @@
         android:id="@+id/tv_about_us"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"/>
+
         <ProgressBar
 android:layout_centerInParent="true"
             android:id="@+id/google_progress"

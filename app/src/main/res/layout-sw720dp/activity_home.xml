@@ -537,10 +537,10 @@
 
                 />
             <ImageView
-                android:src="@drawable/home2"
+                android:src="@drawable/logo"
                 android:layout_centerInParent="true"
-                android:layout_width="50dp"
-                android:layout_height="50dp" />
+                android:layout_width="42dp"
+                android:layout_height="48dp" />
         </RelativeLayout>
         <RelativeLayout
             android:id="@+id/rl_dir"
